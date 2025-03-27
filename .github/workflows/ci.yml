@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  ASTRO_TELEMETRY_DISABLED: true
+  FORCE_COLOR: true
+
+jobs:
+  astro:
+    name: Astro Check
+    runs-on: blacksmith-2vcpu-ubuntu-2204
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: useblacksmith/setup-node@v5
+        with:
+          node-version: 22
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn --immutable
+
+      - name: Run Astro Check
+        run: yarn astro check
+
+  formatting:
+    name: Formatting
+    runs-on: blacksmith-2vcpu-ubuntu-2204
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: useblacksmith/setup-node@v5
+        with:
+          node-version: 22
+          cache: yarn
+
+      - name: Install Dependencies
+        run: yarn --immutable
+
+      - name: Run Prettier
+        run: yarn prettier --check .
+
+  commitlint:
+    name: Commit Message Linting
+    runs-on: blacksmith-2vcpu-ubuntu-2204
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: useblacksmith/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Install Dependencies
+        run: yarn --immutable
+
+      # https://commitlint.js.org/guides/ci-setup#github-actions
+      - name: Validate current commit (last commit) with commitlint
+        if: github.event_name == 'push'
+        run: yarn commitlint --last --verbose
+
+      - name: Validate PR commits with commitlint
+        if: github.event_name == 'pull_request'
+        run: yarn commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose

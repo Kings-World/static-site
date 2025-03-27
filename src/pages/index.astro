@@ -1,0 +1,120 @@
+---
+import { buttonVariants } from "~/components/ui/button";
+import { Card, CardHeader, CardTitle, CardDescription } from "~/components/ui/card";
+import { links } from "~/lib/constants";
+import { StarIcon, MessageCircleIcon, ShieldIcon, ActivityIcon, CheckIcon } from "lucide-react";
+import PageLayout from "~/layouts/PageLayout.astro";
+import { Twitch } from "simple-icons-astro";
+import { FAQ } from "~/components/faq";
+---
+
+<PageLayout>
+	<section class="py-12 md:py-20 lg:py-24">
+        <div class="container space-y-6 px-4 text-center md:px-6">
+            <h1 class="text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-wrap md:text-6xl">
+                Welcome to Kings World
+            </h1>
+            <p class="mx-auto max-w-[700px] text-balance text-lg md:text-wrap md:text-xl">
+                Kings World is a suite of tools and Discord bots that help you maintain your Discord server.
+            </p>
+            <a href={links.discord} class={buttonVariants({ variant: "secondary", size: "lg" })}>Join Server</a>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container space-y-8 px-4 md:px-6">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight">
+                    Features
+                </h2>
+                <p class="max-w-[700px] text-muted-foreground">
+                    Unlock the full potential of your Discord community
+                </p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <ShieldIcon className="size-5" />
+                            <span>Moderation</span>
+                        </CardTitle>
+                        <CardDescription>
+                            Comprehensive moderation capabilities to keep your server safe and clean.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <CheckIcon className="size-5" />
+                            <span>Automation</span>
+                        </CardTitle>
+                        <CardDescription>
+                            Automatically create threads, give roles when someone joins, and more.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <StarIcon className="size-5" />
+                            <span>Starboard</span>
+                        </CardTitle>
+                        <CardDescription>
+                            Have the ability to star messages and have
+                            them displayed in a channel.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <MessageCircleIcon className="size-5" />
+                            <span>Leveling</span>
+                        </CardTitle>
+                        <CardDescription>
+                            Have the ability to level up in the server
+                            by being active.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <Twitch class="size-5" />
+                            <span>Twitch notifications</span>
+                        </CardTitle>
+                        <CardDescription>
+                            Get notified when your favourite streamer goes live on
+                            Twitch.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex flex-row gap-2 items-center">
+                            <ActivityIcon className="size-5" />
+                            <span>Utilities</span>
+                        </CardTitle>
+                        <CardDescription>
+                            View information about the server, user, and more.
+                        </CardDescription>
+                    </CardHeader>
+                </Card>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container space-y-8 px-4 md:px-6">
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <div class="mt-6 grid gap-6">
+                <FAQ client:load />
+            </div>
+        </div>
+    </section>
+</PageLayout>

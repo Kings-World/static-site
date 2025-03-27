@@ -1,0 +1,10 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["local>Kings-World/.github:renovate-config", "customManagers:biomeVersions"],
+    "packageRules": [
+        {
+            "matchPackageNames": ["typescript"],
+            "enabled": false
+        }
+    ]
+}
