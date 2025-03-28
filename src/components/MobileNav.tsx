@@ -14,21 +14,21 @@ export function MobileNav() {
                     <MenuIcon className="size-5" />
                     <span className="sr-only">Open mobile nav</span>
                 </Button>
-                <SheetContent side="left" className="pr-0">
-                    <a href="/" className="text-lg font-bold">
-                        {siteConfig.name}
-                    </a>
-                    <div className="my-4 pb-10">
-                        <div className="flex flex-col space-y-3">
-                            {mainNav.map((item) => (
-                                <a key={item.href} href={item.href}>
-                                    {item.title}
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                </SheetContent>
             </SheetTrigger>
+            <SheetContent side="left" className="pr-0">
+                <a href="/" className="text-lg font-bold">
+                    {siteConfig.name}
+                </a>
+                <div className="my-4 pb-10">
+                    <div className="flex flex-col space-y-3">
+                        {mainNav.map((item) => (
+                            <a key={item.href} href={item.href}>
+                                {item.title}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </SheetContent>
         </Sheet>
     );
 }
