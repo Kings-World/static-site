@@ -1,6 +1,6 @@
 export const siteConfig = {
     name: "Kings World",
-    description: "Kings World is a suite of tools, Discord bots, and more"
+    description: "Kings World is a suite of tools, Discord bots, and more",
 } as const;
 
 export const links = {
@@ -10,5 +10,15 @@ export const links = {
 } as const;
 
 export const mainNav = [
-    { name: "Dashboard", href: "/dashboard", disabled: true, title: "Coming Soon!" }
-] satisfies { name: string; href: string; disabled?: boolean; title?: string }[]
+    {
+        name: "Dashboard",
+        href: "/dashboard",
+        disabled: true,
+        title: "Coming Soon!",
+    },
+] satisfies {
+    name: string;
+    href: string;
+    disabled?: boolean;
+    title?: string;
+}[];

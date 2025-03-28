@@ -1,4 +1,9 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "./ui/accordion";
 
 export function FAQ() {
     return (
@@ -9,10 +14,9 @@ export function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent>
                     <p className="text-muted-foreground">
-                        To join the server, click the &quot;Join
-                        Server&quot; button above. You will be
-                        redirected to the Kings World server
-                        where you can accept the invite.
+                        To join the server, click the &quot;Join Server&quot;
+                        button above. You will be redirected to the Kings World
+                        server where you can accept the invite.
                     </p>
                 </AccordionContent>
             </AccordionItem>
@@ -22,13 +26,12 @@ export function FAQ() {
                 </AccordionTrigger>
                 <AccordionContent>
                     <p className="text-muted-foreground">
-                        Unfortunately, we are not currently
-                        accepting applications for staff
-                        members. However, we may open
+                        Unfortunately, we are not currently accepting
+                        applications for staff members. However, we may open
                         applications in the future.
                     </p>
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
-    )
+    );
 }
