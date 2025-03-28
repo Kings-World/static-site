@@ -14,11 +14,9 @@ export const mainNav = [
         name: "Dashboard",
         href: "/dashboard",
         disabled: true,
-        title: "Coming Soon!",
     },
 ] satisfies {
     name: string;
     href: string;
     disabled?: boolean;
-    title?: string;
 }[];

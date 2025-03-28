@@ -3,13 +3,11 @@ import MainNav from "./MainNav.astro";
 import { Discord, Github, Githubsponsors } from "simple-icons-astro";
 import { links } from "~/lib/constants";
 import { buttonVariants } from "./ui/button";
-import { MobileNav } from "./MobileNav";
 ---
 
 <header class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div class="container flex h-14 max-w-(--breakpoint-2xl)">
         <MainNav />
-        <MobileNav client:visible />
         <div class="flex flex-1 items-center justify-end space-x-2">
             <div class="flex items-center gap-0.5">
                 <a href={links.discord} class={buttonVariants({ variant: "ghost", size: "icon" })}>

@@ -3,17 +3,19 @@ import { mainNav } from "~/lib/constants";
 import { cn } from "~/lib/utils";
 ---
 
-<div class="hidden items-center md:flex">
+<div class="items-center flex">
     <a href="/" class="mr-4 flex items-center space-x-2 lg:mr-6 font-bold">Kings World</a>
-    <nav class="flex items-center gap-4 text-sm lg:gap-6">
-        {mainNav.map(item => (
+    <nav class="hidden sm:flex items-center gap-4 text-sm lg:gap-6">
+        {mainNav.map(item => item.disabled ? (
+            <p class="text-foreground/60 cursor-not-allowed" aria-disabled="true">{item.name}</p>
+        ) : (
             <a href={item.href} class={cn(
                 "transition-colors hover:text-foreground/80",
-                Astro.url.pathname === item.href && !item.disabled
+                Astro.url.pathname === item.href
                     ? "text-foreground"
                     : "text-foreground/60",
                     item.disabled && "cursor-not-allowed"
-            )} aria-disabled={item.disabled} title={item.title}>{item.name}</a>
+            )}>{item.name}</a>
         ))}
     </nav>
 </div>

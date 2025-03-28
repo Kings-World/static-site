@@ -10,7 +10,10 @@ export function MobileNav() {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button variant="ghost" className="size-8 px-0 md:hidden">
+                <Button
+                    variant="ghost"
+                    className="size-8 px-0 md:hidden items-center h-auto"
+                >
                     <MenuIcon className="size-5" />
                     <span className="sr-only">Open mobile nav</span>
                 </Button>
@@ -23,7 +26,7 @@ export function MobileNav() {
                     <div className="flex flex-col space-y-3">
                         {mainNav.map((item) => (
                             <a key={item.href} href={item.href}>
-                                {item.title}
+                                {item.name}
                             </a>
                         ))}
                     </div>

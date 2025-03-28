@@ -7,7 +7,7 @@ import {
 
 export function FAQ() {
     return (
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple">
             <AccordionItem value="faq-1">
                 <AccordionTrigger className="text-start text-lg font-semibold">
                     How do I join the server?
