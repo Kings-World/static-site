@@ -5,20 +5,37 @@ import { links } from "~/lib/constants";
 import { buttonVariants } from "./ui/button";
 ---
 
-<header class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+<header
+    class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+>
     <div class="container flex h-14 max-w-(--breakpoint-2xl)">
         <MainNav />
         <div class="flex flex-1 items-center justify-end space-x-2">
             <div class="flex items-center gap-0.5">
-                <a href={links.discord} class={buttonVariants({ variant: "ghost", size: "icon" })}>
+                <a
+                    href={links.discord}
+                    target="_blank"
+                    rel="noreferrer"
+                    class={buttonVariants({ variant: "ghost", size: "icon" })}
+                >
                     <Discord class="size-4" />
                     <span class="sr-only">Discord</span>
                 </a>
-                <a href={links.github} class={buttonVariants({ variant: "ghost", size: "icon" })}>
+                <a
+                    href={links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    class={buttonVariants({ variant: "ghost", size: "icon" })}
+                >
                     <Github class="size-4" />
                     <span class="sr-only">GitHub</span>
                 </a>
-                <a href={links.sponsor} class={buttonVariants({ variant: "ghost", size: "icon" })}>
+                <a
+                    href={links.sponsor}
+                    target="_blank"
+                    rel="noreferrer"
+                    class={buttonVariants({ variant: "ghost", size: "icon" })}
+                >
                     <Githubsponsors class="size-4" />
                     <span class="sr-only">Sponsor</span>
                 </a>

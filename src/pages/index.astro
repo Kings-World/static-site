@@ -1,32 +1,52 @@
 ---
 import { buttonVariants } from "~/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription } from "~/components/ui/card";
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardDescription,
+} from "~/components/ui/card";
 import { links } from "~/lib/constants";
-import { StarIcon, MessageCircleIcon, ShieldIcon, ActivityIcon, CheckIcon } from "lucide-react";
+import {
+    StarIcon,
+    MessageCircleIcon,
+    ShieldIcon,
+    ActivityIcon,
+    CheckIcon,
+} from "lucide-react";
 import PageLayout from "~/layouts/PageLayout.astro";
 import { Twitch } from "simple-icons-astro";
 import { FAQ } from "~/components/FAQ";
 ---
 
 <PageLayout>
-	<section class="py-12 md:py-20 lg:py-24">
+    <section class="py-12 md:py-20 lg:py-24">
         <div class="container space-y-6 px-4 text-center md:px-6">
-            <h1 class="text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-wrap md:text-6xl">
+            <h1
+                class="text-balance text-4xl font-bold tracking-tight sm:text-5xl md:text-wrap md:text-6xl"
+            >
                 Welcome to Kings World
             </h1>
-            <p class="mx-auto max-w-[700px] text-balance text-lg md:text-wrap md:text-xl">
-                Kings World is a suite of tools and Discord bots that help you maintain your Discord server.
+            <p
+                class="mx-auto max-w-[700px] text-balance text-lg md:text-wrap md:text-xl"
+            >
+                Kings World is a suite of tools and Discord bots that help you
+                maintain your Discord server.
             </p>
-            <a href={links.discord} class={buttonVariants({ variant: "secondary", size: "lg" })}>Join Server</a>
+            <a
+                href={links.discord}
+                target="_blank"
+                rel="noreferrer"
+                class={buttonVariants({ variant: "secondary", size: "lg" })}
+                >Join Server</a
+            >
         </div>
     </section>
 
     <section class="py-12">
         <div class="container space-y-8 px-4 md:px-6">
             <div class="space-y-4">
-                <h2 class="text-3xl font-bold tracking-tight">
-                    Features
-                </h2>
+                <h2 class="text-3xl font-bold tracking-tight">Features</h2>
                 <p class="max-w-[700px] text-muted-foreground">
                     Unlock the full potential of your Discord community
                 </p>
@@ -39,7 +59,8 @@ import { FAQ } from "~/components/FAQ";
                             <span>Moderation</span>
                         </CardTitle>
                         <CardDescription>
-                            Comprehensive moderation capabilities to keep your server safe and clean.
+                            Comprehensive moderation capabilities to keep your
+                            server safe and clean.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -50,7 +71,8 @@ import { FAQ } from "~/components/FAQ";
                             <span>Automation</span>
                         </CardTitle>
                         <CardDescription>
-                            Automatically create threads, give roles when someone joins, and more.
+                            Automatically create threads, give roles when
+                            someone joins, and more.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -61,8 +83,8 @@ import { FAQ } from "~/components/FAQ";
                             <span>Starboard</span>
                         </CardTitle>
                         <CardDescription>
-                            Have the ability to star messages and have
-                            them displayed in a channel.
+                            Have the ability to star messages and have them
+                            displayed in a channel.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -73,8 +95,8 @@ import { FAQ } from "~/components/FAQ";
                             <span>Leveling</span>
                         </CardTitle>
                         <CardDescription>
-                            Have the ability to level up in the server
-                            by being active.
+                            Have the ability to level up in the server by being
+                            active.
                         </CardDescription>
                     </CardHeader>
                 </Card>
@@ -85,8 +107,8 @@ import { FAQ } from "~/components/FAQ";
                             <span>Twitch notifications</span>
                         </CardTitle>
                         <CardDescription>
-                            Get notified when your favourite streamer goes live on
-                            Twitch.
+                            Get notified when your favourite streamer goes live
+                            on Twitch.
                         </CardDescription>
                     </CardHeader>
                 </Card>
