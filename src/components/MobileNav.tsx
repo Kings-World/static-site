@@ -12,7 +12,7 @@ export function MobileNav() {
             <SheetTrigger asChild>
                 <Button
                     variant="ghost"
-                    className="size-8 px-0 md:hidden items-center h-auto"
+                    className="size-8 h-auto items-center px-0 md:hidden"
                 >
                     <MenuIcon className="size-5" />
                     <span className="sr-only">Open mobile nav</span>

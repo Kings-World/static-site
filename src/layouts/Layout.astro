@@ -11,17 +11,21 @@ const { title, description } = Astro.props;
 const logoURL = new URL("/logo.png", Astro.url);
 
 const parsedTitle = title ? `${title} - Kings World` : "Kings World";
-const parsedDescription = description ?? "Kings World is a suite of tools, Discord bots, and more";
+const parsedDescription =
+    description ?? "Kings World is a suite of tools, Discord bots, and more";
 ---
 
 <!doctype html>
 <html lang="en" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="generator" content={Astro.generator} />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content={Astro.generator} />
         <meta name="author" content="Seren_Modz 21" />
-        <meta name="keywords" content="Kings World, Kings Beta, Kings Utility, GhostyCord, Discord Community, Discord Bots" />
+        <meta
+            name="keywords"
+            content="Kings World, Kings Beta, Kings Utility, GhostyCord, Discord Community, Discord Bots"
+        />
 
         <meta name="msapplication-TileColor" content="#131830" />
         <meta name="msapplication-starturl" content="/" />
@@ -29,19 +33,42 @@ const parsedDescription = description ?? "Kings World is a suite of tools, Disco
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#131830" />
 
-        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            type="image/png"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            sizes="32x32"
+            href="/favicon.ico"
+        />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#131830" />
 
-        <meta name="google-site-verification" content="q7ajPP8pu2rH2J69LpM6pTsoWQPJq8hbzcEDCS1oNs4" />
+        <meta
+            name="google-site-verification"
+            content="q7ajPP8pu2rH2J69LpM6pTsoWQPJq8hbzcEDCS1oNs4"
+        />
         <meta property="fb:app_id" content="543459586677935" />
 
-        <meta name="robots" content="index,follow">
-        <meta name="googlebot" content="index,follow">
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
 
-		<title>{parsedTitle}</title>
+        <title>{parsedTitle}</title>
         <meta name="description" content={parsedDescription} />
         <link rel="canonical" href={Astro.url} />
         <link rel="sitemap" href="/sitemap-index.xml" />
@@ -60,8 +87,8 @@ const parsedDescription = description ?? "Kings World is a suite of tools, Disco
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@SerenModz21" />
         <meta name="twitter:creator" content="@SerenModz21" />
-	</head>
-	<body class="antialiased flex min-h-lvh flex-col">
-		<slot />
-	</body>
+    </head>
+    <body class="flex min-h-lvh flex-col antialiased">
+        <slot />
+    </body>
 </html>

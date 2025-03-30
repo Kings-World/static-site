@@ -1,11 +1,14 @@
 <footer class="border-t py-4">
-    <div class="container flex flex-col sm:flex-row items-center justify-between gap-1">
+    <div
+        class="container flex flex-col items-center justify-between gap-1 sm:flex-row"
+    >
+        <p class="text-muted-foreground text-sm">
+            © {new Date().getFullYear()} Kings World. All rights reserved.
+        </p>
 
-            <p class="text-sm text-muted-foreground">© {new Date().getFullYear()} Kings World. All rights reserved.</p>
-
-            <div class="flex gap-4 text-sm items-center text-muted-foreground">
-                <a href="/legal/terms-of-service/">Terms of Service</a>
-                <a href="/legal/privacy-policy/">Privacy Policy</a>
-            </div>
+        <div class="text-muted-foreground flex items-center gap-4 text-sm">
+            <a href="/legal/terms-of-service/">Terms of Service</a>
+            <a href="/legal/privacy-policy/">Privacy Policy</a>
+        </div>
     </div>
 </footer>
