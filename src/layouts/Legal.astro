@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <PageLayout title={frontmatter.title}>
-    <div class="prose prose-lg dark:prose-invert prose-zinc container py-8">
+    <div class="prose dark:prose-invert prose-zinc container py-8">
         <slot />
     </div>
 </PageLayout>
