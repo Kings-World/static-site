@@ -6518,12 +6518,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons-astro@npm:^14.12.2":
-  version: 14.12.2
-  resolution: "simple-icons-astro@npm:14.12.2"
+"simple-icons-astro@npm:^14.12.3":
+  version: 14.12.3
+  resolution: "simple-icons-astro@npm:14.12.3"
   peerDependencies:
     astro: ">=2.7.1"
-  checksum: 10/e23bca455ba871b6b6f0ea81607466755e4abc91ff6b2bdacc110ad4e878fcba170ef14ec264e4dea666b558c89fe7b867f9a9a2c6301a5fc50fd8835b375002
+  checksum: 10/ff08d476fc37900b8c9caa17bc3ffea27c7309fc6a11b7050d8a3929134171a06296a6229dd6ec6ee5275ba8e08a6fb8a8975380fd08f1f6ac166ef8279607d6
   languageName: node
   linkType: hard
 
@@ -6664,10 +6664,10 @@ __metadata:
     pretty-quick: "npm:^4.1.1"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
-    simple-icons-astro: "npm:^14.12.2"
+    simple-icons-astro: "npm:^14.12.3"
     tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4.1.4"
-    tw-animate-css: "npm:^1.2.5"
+    tw-animate-css: "npm:^1.2.7"
     typescript: "npm:^5.8.3"
   languageName: unknown
   linkType: soft
@@ -6891,10 +6891,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tw-animate-css@npm:^1.2.5":
-  version: 1.2.5
-  resolution: "tw-animate-css@npm:1.2.5"
-  checksum: 10/bc9a3409d22704286bf5e6696c242f6d0563408b9d52d98818254ec00cfa2632c8b5172d456d902d566b04903a555e0add511d695579fc1682bd603e05abb200
+"tw-animate-css@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "tw-animate-css@npm:1.2.7"
+  checksum: 10/4ba3e63e4b627d5d8ba6827bf01878d614f3619e388b0ce1badc1b05ec112a6e3a1e39597b46bb8c3ba7ca8f26153a390560dbdec885a3371c3199d869fe41ba
   languageName: node
   linkType: hard
 
