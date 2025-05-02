@@ -1,11 +1,13 @@
 ---
+import "~/styles/globals.css";
+
+import { ClientRouter } from "astro:transitions";
 import { siteConfig } from "~/lib/constants";
 import {
     createOrganizationSchema,
     createWebPageSchema,
     type Schema,
 } from "~/lib/schema";
-import "~/styles/globals.css";
 
 export interface Props {
     title?: string;
@@ -125,6 +127,8 @@ const webPageSchema = createWebPageSchema(
                 />
             ))
         }
+
+        <ClientRouter />
     </head>
     <body class="grid min-h-svh grid-rows-[auto_1fr_auto] antialiased">
         <slot />
