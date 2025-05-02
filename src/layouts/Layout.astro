@@ -90,7 +90,7 @@ const webPageSchema = createWebPageSchema(
 
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteConfig.name} />
-        <meta property="og:title" content={parsedTitle} />
+        <meta property="og:title" content={title ?? siteConfig.title} />
         <meta property="og:description" content={parsedDescription} />
         <meta property="og:url" content={Astro.url} />
         <meta property="og:image" content={logoURL} />
