@@ -1,18 +1,31 @@
 ---
+import { siteConfig } from "~/lib/constants";
+import {
+    createOrganizationSchema,
+    createWebPageSchema,
+    type Schema,
+} from "~/lib/schema";
 import "~/styles/globals.css";
 
-interface Props {
+export interface Props {
     title?: string;
     description?: string;
+    schemas?: Schema[];
 }
 
-const { title, description } = Astro.props;
+const { title, description, schemas } = Astro.props;
 
 const logoURL = new URL("/logo.png", Astro.url);
 
-const parsedTitle = title ? `${title} - Kings World` : "Kings World";
-const parsedDescription =
-    description ?? "Kings World is a suite of tools, Discord bots, and more";
+const parsedTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title;
+const parsedDescription = description ?? siteConfig.description;
+
+const organizationSchema = createOrganizationSchema(Astro.url);
+const webPageSchema = createWebPageSchema(
+    parsedTitle,
+    parsedDescription,
+    Astro.url,
+);
 ---
 
 <!doctype html>
@@ -24,7 +37,7 @@ const parsedDescription =
         <meta name="author" content="Seren_Modz 21" />
         <meta
             name="keywords"
-            content="Kings World, Kings Beta, Kings Utility, GhostyCord, Discord Community, Discord Bots"
+            content="Kings World, Discord Bots, Server Management, Discord Moderation, Server Automation, Leveling Bot, Discord Utility, Twitch Notifications, Discord Community, Server Tools, Discord Starboard, Server Administration, Discord Automation"
         />
 
         <meta name="msapplication-TileColor" content="#131830" />
@@ -74,6 +87,7 @@ const parsedDescription =
         <link rel="sitemap" href="/sitemap-index.xml" />
 
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={siteConfig.name} />
         <meta property="og:title" content={parsedTitle} />
         <meta property="og:description" content={parsedDescription} />
         <meta property="og:url" content={Astro.url} />
@@ -81,12 +95,33 @@ const parsedDescription =
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="The Kings World logo" />
+        <meta
+            property="og:image:alt"
+            content="Kings World logo - Discord bots and server management tools"
+        />
         <meta property="og:locale" content="en" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@SerenModz21" />
         <meta name="twitter:creator" content="@SerenModz21" />
+
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(organizationSchema)}
+        />
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(webPageSchema)}
+        />
+
+        {
+            schemas?.map((schema) => (
+                <script
+                    type="application/ld+json"
+                    set:html={JSON.stringify(schema)}
+                />
+            ))
+        }
     </head>
     <body class="flex min-h-lvh flex-col antialiased">
         <slot />

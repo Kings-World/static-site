@@ -6384,6 +6384,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"schema-dts@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "schema-dts@npm:1.1.5"
+  checksum: 10/74f8376449241f008349cbd938e30e2174f0c974bb5155c852bdbbb4873a0f151a12601cf2fe115ae0811a0f7ccaefd3525e21c2a8f0fab7ada9c0309230db0a
+  languageName: node
+  linkType: hard
+
 "semver@npm:^6.3.1":
   version: 6.3.1
   resolution: "semver@npm:6.3.1"
@@ -6656,6 +6663,7 @@ __metadata:
     pretty-quick: "npm:^4.1.1"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
+    schema-dts: "npm:^1.1.5"
     simple-icons-astro: "npm:^14.12.3"
     tailwind-merge: "npm:^3.2.0"
     tailwindcss: "npm:^4.1.4"

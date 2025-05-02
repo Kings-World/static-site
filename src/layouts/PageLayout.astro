@@ -3,15 +3,12 @@ import Navbar from "~/components/Navbar.astro";
 import Layout from "./Layout.astro";
 import Footer from "~/components/Footer.astro";
 
-interface Props {
-    title?: string;
-    description?: string;
-}
+import type { Props } from "./Layout.astro";
 
-const { title, description } = Astro.props;
+const props = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<Layout {...props}>
     <Navbar />
     <main class="flex-1">
         <slot />
