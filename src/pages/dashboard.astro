@@ -1,5 +1,5 @@
 ---
-import { FileQuestion, Home } from "lucide-react";
+import { Clock, Home, Bell } from "lucide-react";
 import { buttonVariants } from "~/components/ui/button";
 import {
     Card,
@@ -10,27 +10,31 @@ import {
 } from "~/components/ui/card";
 import PageLayout from "~/layouts/PageLayout.astro";
 import { cn } from "~/lib/utils";
-import { Discord } from "simple-icons-astro";
 import { links } from "~/lib/constants";
 ---
 
-<PageLayout title="404" description="Page not found">
+<PageLayout
+    title="Dashboard Under Construction"
+    description="Our dashboard is currently under development. We're working hard to bring you powerful tools to manage your Discord server experience. Check back soon!"
+>
     <div class="container flex flex-1 items-center justify-center">
         <Card className="w-full max-w-md">
             <CardHeader className="text-center">
                 <div class="mb-4 flex w-full justify-center">
-                    <FileQuestion className="text-muted-foreground h-24 w-24" />
+                    <Clock className="text-muted-foreground h-24 w-24" />
                 </div>
-                <CardTitle className="mb-2 text-4xl font-bold"> 404 </CardTitle>
+                <CardTitle className="mb-2 text-4xl font-bold"
+                    >Coming Soon</CardTitle
+                >
                 <p class="text-muted-foreground text-xl font-semibold">
-                    Page Not Found
+                    Dashboard Under Construction
                 </p>
             </CardHeader>
             <CardContent>
                 <p class="text-muted-foreground text-center">
-                    Oops! It seems you&apos;ve ventured into uncharted
-                    territory. Don&apos;t worry, even the best explorers get
-                    lost sometimes.
+                    Our dashboard is currently under development. We're working
+                    hard to bring you powerful tools to manage your Discord
+                    server experience. Check back soon!
                 </p>
             </CardContent>
             <CardFooter className="flex justify-center gap-4">
@@ -49,12 +53,12 @@ import { links } from "~/lib/constants";
                     target="_blank"
                     rel="noreferrer"
                     class={cn(
-                        buttonVariants({ variant: "outline" }),
+                        buttonVariants({ variant: "default" }),
                         "flex items-center gap-2",
                     )}
                 >
-                    <Discord className="size-4" />
-                    <span>Discord</span>
+                    <Bell className="size-4" />
+                    <span>Get Notified</span>
                 </a>
             </CardFooter>
         </Card>

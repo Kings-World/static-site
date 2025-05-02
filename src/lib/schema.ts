@@ -27,7 +27,7 @@ const serenSchema: Person = {
     },
 };
 
-export function createOrganizationSchema(url: URL): WithContext<Organization> {
+export function createOrganizationSchema(): WithContext<Organization> {
     return {
         "@context": "https://schema.org",
         "@type": "Organization",

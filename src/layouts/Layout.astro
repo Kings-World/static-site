@@ -20,7 +20,7 @@ const logoURL = new URL("/logo.png", Astro.url);
 const parsedTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title;
 const parsedDescription = description ?? siteConfig.description;
 
-const organizationSchema = createOrganizationSchema(Astro.url);
+const organizationSchema = createOrganizationSchema();
 const webPageSchema = createWebPageSchema(
     parsedTitle,
     parsedDescription,
@@ -108,10 +108,12 @@ const webPageSchema = createWebPageSchema(
         <script
             type="application/ld+json"
             set:html={JSON.stringify(organizationSchema)}
+            is:inline
         />
         <script
             type="application/ld+json"
             set:html={JSON.stringify(webPageSchema)}
+            is:inline
         />
 
         {
@@ -119,11 +121,12 @@ const webPageSchema = createWebPageSchema(
                 <script
                     type="application/ld+json"
                     set:html={JSON.stringify(schema)}
+                    is:inline
                 />
             ))
         }
     </head>
-    <body class="flex min-h-lvh flex-col antialiased">
+    <body class="grid min-h-svh grid-rows-[auto_1fr_auto] antialiased">
         <slot />
     </body>
 </html>

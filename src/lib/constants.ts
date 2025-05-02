@@ -12,14 +12,15 @@ export const links = {
     sponsor: "https://seren.link/sponsor",
 } as const;
 
-export const mainNav = [
-    // {
-    //     name: "Dashboard",
-    //     href: "/dashboard",
-    //     disabled: true,
-    // },
-] satisfies {
+export const mainNav: NavLink[] = [
+    {
+        name: "Dashboard",
+        href: "/dashboard",
+    },
+];
+
+interface NavLink {
     name: string;
     href: string;
     disabled?: boolean;
-}[];
+}
