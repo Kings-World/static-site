@@ -3,7 +3,7 @@ export const siteConfig = {
     url: "https://kings-world.net",
     title: "Kings World | Discord Bots & Developer Tools for Server Management",
     description:
-        "Kings World offers powerful Discord bots, developer tools, and community resources to enhance your server experience. Explore our suite of utilities for moderation, engagement, and server management.",
+        "Kings World offers Discord bots and developer tools to enhance your server experience. We have utilities for moderation, engagement, and server management.",
 } as const;
 
 export const links = {
