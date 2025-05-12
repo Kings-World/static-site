@@ -15,7 +15,7 @@ export const links = {
 export const mainNav: NavLink[] = [
     {
         name: "Dashboard",
-        href: "/dashboard",
+        href: "/dashboard/",
     },
 ];
 
