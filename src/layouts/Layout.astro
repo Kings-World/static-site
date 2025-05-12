@@ -6,6 +6,7 @@ import { siteConfig } from "~/lib/constants";
 import {
     createOrganizationSchema,
     createWebPageSchema,
+    createWebSiteSchema,
     type Schema,
 } from "~/lib/schema";
 
@@ -23,6 +24,7 @@ const parsedTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title;
 const parsedDescription = description ?? siteConfig.description;
 
 const organizationSchema = createOrganizationSchema();
+const websiteSchema = createWebSiteSchema();
 const webPageSchema = createWebPageSchema(
     parsedTitle,
     parsedDescription,
@@ -110,6 +112,11 @@ const webPageSchema = createWebPageSchema(
         <script
             type="application/ld+json"
             set:html={JSON.stringify(organizationSchema)}
+            is:inline
+        />
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(websiteSchema)}
             is:inline
         />
         <script

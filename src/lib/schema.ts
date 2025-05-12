@@ -6,6 +6,7 @@ import type {
     SoftwareApplication,
     Thing,
     WebPage,
+    WebSite,
     WithContext,
 } from "schema-dts";
 import { links, siteConfig } from "./constants";
@@ -67,9 +68,18 @@ export function createWebPageSchema(
         url: url.toString(),
         isPartOf: {
             "@type": "WebSite",
-            name: "Kings World",
-            url: "https://kings-world.net",
+            name: siteConfig.name,
+            url: siteConfig.url,
         },
+    };
+}
+
+export function createWebSiteSchema(): WithContext<WebSite> {
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: siteConfig.name,
+        url: siteConfig.url,
     };
 }
 
@@ -111,8 +121,8 @@ export function createSoftwareSchema(): WithContext<SoftwareApplication> {
             "Moderation, Automation, Starboard, Leveling, Twitch notifications, Utilities",
         author: {
             "@type": "Organization",
-            name: "Kings World",
-            url: "https://kings-world.net",
+            name: siteConfig.name,
+            url: siteConfig.url,
         },
     };
 }
