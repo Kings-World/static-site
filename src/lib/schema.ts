@@ -11,6 +11,8 @@ import type {
 } from "schema-dts";
 import { links, siteConfig } from "./constants";
 
+const urlWithTrailingSlash = `${siteConfig.url}/`;
+
 export type Schema<T extends Thing = Thing> = WithContext<T>;
 
 const serenSchema: Person = {
@@ -33,7 +35,7 @@ export function createOrganizationSchema(): WithContext<Organization> {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: siteConfig.name,
-        url: siteConfig.url,
+        url: urlWithTrailingSlash,
         logo: `${siteConfig.url}/logo.png`,
         description: siteConfig.description,
         sameAs: [links.github, links.discord],
@@ -69,7 +71,7 @@ export function createWebPageSchema(
         isPartOf: {
             "@type": "WebSite",
             name: siteConfig.name,
-            url: siteConfig.url,
+            url: urlWithTrailingSlash,
         },
     };
 }
@@ -79,7 +81,7 @@ export function createWebSiteSchema(): WithContext<WebSite> {
         "@context": "https://schema.org",
         "@type": "WebSite",
         name: siteConfig.name,
-        url: siteConfig.url,
+        url: urlWithTrailingSlash,
     };
 }
 
@@ -122,7 +124,7 @@ export function createSoftwareSchema(): WithContext<SoftwareApplication> {
         author: {
             "@type": "Organization",
             name: siteConfig.name,
-            url: siteConfig.url,
+            url: urlWithTrailingSlash,
         },
     };
 }
@@ -145,7 +147,7 @@ export function createLegalPageSchema(
         isPartOf: {
             "@type": "WebSite",
             name: siteConfig.name,
-            url: siteConfig.url,
+            url: urlWithTrailingSlash,
         },
     };
 }
