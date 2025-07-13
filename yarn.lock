@@ -2124,12 +2124,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.16.0":
-  version: 22.16.0
-  resolution: "@types/node@npm:22.16.0"
+"@types/node@npm:*, @types/node@npm:^22.16.3":
+  version: 22.16.3
+  resolution: "@types/node@npm:22.16.3"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/26ebbbd24749caa4a692664290c53cdca63ec717ca250cd2babf3d3da796e9d3d0b6b9814d160693261b5e881796bf0f3c1887fef355b19e9a78fe27cd5e2ce2
+  checksum: 10/b71fe7abf242091e2f303b400b27f677c311b03a3125bf5532e06aff8a4cd41944bcc6f70a0666834e4352228607e676bc8082fa38d3739d3e1460a20d5c51d2
   languageName: node
   linkType: hard
 
@@ -5703,11 +5703,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.6.13":
-  version: 0.6.13
-  resolution: "prettier-plugin-tailwindcss@npm:0.6.13"
+"prettier-plugin-tailwindcss@npm:^0.6.14":
+  version: 0.6.14
+  resolution: "prettier-plugin-tailwindcss@npm:0.6.14"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
+    "@prettier/plugin-hermes": "*"
+    "@prettier/plugin-oxc": "*"
     "@prettier/plugin-pug": "*"
     "@shopify/prettier-plugin-liquid": "*"
     "@trivago/prettier-plugin-sort-imports": "*"
@@ -5726,6 +5728,10 @@ __metadata:
     prettier-plugin-svelte: "*"
   peerDependenciesMeta:
     "@ianvs/prettier-plugin-sort-imports":
+      optional: true
+    "@prettier/plugin-hermes":
+      optional: true
+    "@prettier/plugin-oxc":
       optional: true
     "@prettier/plugin-pug":
       optional: true
@@ -5757,7 +5763,7 @@ __metadata:
       optional: true
     prettier-plugin-svelte:
       optional: true
-  checksum: 10/26151608596f077056107589add057d0c4ebee534d7015699399dd85b1e7d3ef88980d136c54add4bb8cf35d8918ee3719e3b0d5cb898074d3dd8b173ee933ab
+  checksum: 10/84235df312878176f7019272d921923943895f08120393e40f518c4c5f572e6adf11fdd9fbe9c92b9d7210ed1f9c6605e89de1b627b6ac2cf8480e199ee80e26
   languageName: node
   linkType: hard
 
@@ -6506,12 +6512,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons-astro@npm:^15.4.0":
-  version: 15.4.0
-  resolution: "simple-icons-astro@npm:15.4.0"
+"simple-icons-astro@npm:^15.5.0":
+  version: 15.5.0
+  resolution: "simple-icons-astro@npm:15.5.0"
   peerDependencies:
     astro: ">=2.7.1"
-  checksum: 10/e7633db4e3f170e747ef5f2c9433cb0cca13c785d59060444e6e7de2ae8e657249484b9633f65a257342cca14313ba74a1daea0e4c0b81091a2e3011e4e8f267
+  checksum: 10/6f2c1908f220b4d5b10414b233676ef970fae6917a8a3e21bd2a317e54725a4ce66fbeebb922ba504e81f8420d9852b0451777ae4ba9b2d74956bd8965af61f0
   languageName: node
   linkType: hard
 
@@ -6639,7 +6645,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.2.3"
     "@tailwindcss/typography": "npm:^0.5.16"
     "@tailwindcss/vite": "npm:^4.1.11"
-    "@types/node": "npm:^22.16.0"
+    "@types/node": "npm:^22.16.3"
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
     astro: "npm:^5.11.0"
@@ -6648,12 +6654,12 @@ __metadata:
     lucide-react: "npm:^0.525.0"
     prettier: "npm:^3.6.2"
     prettier-plugin-astro: "npm:^0.14.1"
-    prettier-plugin-tailwindcss: "npm:^0.6.13"
+    prettier-plugin-tailwindcss: "npm:^0.6.14"
     pretty-quick: "npm:^4.2.2"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
     schema-dts: "npm:^1.1.5"
-    simple-icons-astro: "npm:^15.4.0"
+    simple-icons-astro: "npm:^15.5.0"
     tailwind-merge: "npm:^3.3.1"
     tailwindcss: "npm:^4.1.11"
     tw-animate-css: "npm:^1.3.5"
