@@ -2452,9 +2452,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "astro@npm:5.12.0"
+"astro@npm:^5.12.3":
+  version: 5.12.3
+  resolution: "astro@npm:5.12.3"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.6.1"
@@ -2524,7 +2524,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/f3e3b2ced2cf78068eff5915654d9e7ac23fafa2d26ae4f847b008003b3f11f6ffc653dfa0dbcb1e70c2e5782d61a976725850e8f032575cf03f18a303c1813d
+  checksum: 10/8c6f2fd651b0b829ae6e1f086239b4df8397366382f72efdc256414414007ba2ab83e1e60fa2b49e8308fb1c1b071c2902b6c21aa1681a42f62074325b51bb2b
   languageName: node
   linkType: hard
 
@@ -4455,12 +4455,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.525.0":
-  version: 0.525.0
-  resolution: "lucide-react@npm:0.525.0"
+"lucide-react@npm:^0.526.0":
+  version: 0.526.0
+  resolution: "lucide-react@npm:0.526.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/367bdf5f117ebddc8f7a8d57a749b802a82b0c1ff36d54fa06e6115d0900f21133e5e2aeabdcf763c506c12cf46b33ac8e5ad93b236c404ee728256600e987fa
+  checksum: 10/f024aa4ab4de1043fbcecdb84cfde43f5d3649391a6d06f441cab5f5b8b1ed57088d8251a3d8c8308e02669e889a78ce2c032827bcc911884c6ff89897e79839
   languageName: node
   linkType: hard
 
@@ -6649,10 +6649,10 @@ __metadata:
     "@types/node": "npm:^22.16.5"
     "@types/react": "npm:^19.1.8"
     "@types/react-dom": "npm:^19.1.6"
-    astro: "npm:^5.12.0"
+    astro: "npm:^5.12.3"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
-    lucide-react: "npm:^0.525.0"
+    lucide-react: "npm:^0.526.0"
     prettier: "npm:^3.6.2"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:^0.6.14"
@@ -6663,7 +6663,7 @@ __metadata:
     simple-icons-astro: "npm:^15.7.0"
     tailwind-merge: "npm:^3.3.1"
     tailwindcss: "npm:^4.1.11"
-    tw-animate-css: "npm:^1.3.5"
+    tw-animate-css: "npm:^1.3.6"
     typescript: "npm:^5.8.3"
   languageName: unknown
   linkType: soft
@@ -6894,10 +6894,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tw-animate-css@npm:^1.3.5":
-  version: 1.3.5
-  resolution: "tw-animate-css@npm:1.3.5"
-  checksum: 10/384cea358ef8751f7c0a33bd2cd6c92c3f9535e2fea24ce7cb517ef9839d64b12602028e1676a8d1f5de78899b8841f0a389e6147b4176de4e892c275ef80cdb
+"tw-animate-css@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "tw-animate-css@npm:1.3.6"
+  checksum: 10/648f8d72a831e6c8604c97b9d66d921e5751f185c9f2ebc69e3dd5aad180f414371bc3fd8ea3b2ee1203bd020a7826c2c48c327b406190778a41ce4495104932
   languageName: node
   linkType: hard
 
