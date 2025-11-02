@@ -100,9 +100,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:^4.3.8":
-  version: 4.3.8
-  resolution: "@astrojs/mdx@npm:4.3.8"
+"@astrojs/mdx@npm:^4.3.9":
+  version: 4.3.9
+  resolution: "@astrojs/mdx@npm:4.3.9"
   dependencies:
     "@astrojs/markdown-remark": "npm:6.3.8"
     "@mdx-js/mdx": "npm:^3.1.1"
@@ -119,7 +119,7 @@ __metadata:
     vfile: "npm:^6.0.3"
   peerDependencies:
     astro: ^5.0.0
-  checksum: 10/3b0133e445dda2e5f7002fbd70daef00921779534439e15687d65010a38bfeeb20a7f68de723d9971efdbb16962ec0d4a3798aafb65197f40f3535afd9b88134
+  checksum: 10/b41b89e1469f1e3119ee5034e9d609360f04e74f1636d7e914692aa9360eba193d948819f4067193e5cea4ad9b94c6fac51c59dc22713f1e18752fe20ba813f3
   languageName: node
   linkType: hard
 
@@ -132,19 +132,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "@astrojs/react@npm:4.4.0"
+"@astrojs/react@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@astrojs/react@npm:4.4.1"
   dependencies:
     "@vitejs/plugin-react": "npm:^4.7.0"
     ultrahtml: "npm:^1.6.0"
-    vite: "npm:^6.3.6"
+    vite: "npm:^6.4.1"
   peerDependencies:
     "@types/react": ^17.0.50 || ^18.0.21 || ^19.0.0
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/bf8f3c346b8e5b25ce940f79598f2386b6135d160c67be080d576711209b60a2528f512f8bab04e3d1647b20887b7e454e70d7715674e6aaa927368eb8318a88
+  checksum: 10/67aef873d37c76a410af65b851fe4ed5b94518c7191a055719dd51679ca2350732f8146ef5f7a401e106ec81beb67a64362906352bb4fe86ccfcd5b6d39f8579
   languageName: node
   linkType: hard
 
@@ -2150,12 +2150,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.18.12":
-  version: 22.18.12
-  resolution: "@types/node@npm:22.18.12"
+"@types/node@npm:*, @types/node@npm:^22.18.13":
+  version: 22.18.13
+  resolution: "@types/node@npm:22.18.13"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/41b8853302deac6895aa978193fcab53bf8d1f6f5df5fad38e2a33c2c853c3689e905c9dde373e45bb87273b2690e5ac2d6f40809fe72f45264952ba3ae3b196
+  checksum: 10/a0e8632a3eeeed3986f3b0b170187f67c0f0bb0d4fbbf9627af5c9bf81e2836bb64aa6f3bdab1c00658cb7911d8c231d7d6db853ae643edcd41f383c86f349e6
   languageName: node
   linkType: hard
 
@@ -2479,9 +2479,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.15.1":
-  version: 5.15.1
-  resolution: "astro@npm:5.15.1"
+"astro@npm:^5.15.3":
+  version: 5.15.3
+  resolution: "astro@npm:5.15.3"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.7.4"
@@ -2538,7 +2538,7 @@ __metadata:
     unist-util-visit: "npm:^5.0.0"
     unstorage: "npm:^1.17.0"
     vfile: "npm:^6.0.3"
-    vite: "npm:^6.3.6"
+    vite: "npm:^6.4.1"
     vitefu: "npm:^1.1.1"
     xxhash-wasm: "npm:^1.1.0"
     yargs-parser: "npm:^21.1.1"
@@ -2551,7 +2551,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/cec6faef1618f1974830855438099fdbc094d6c7dfcf1005cac465b0f502747972ad731a0ec15c03aca62760046ec9de74ef611af6b01601685881f557695858
+  checksum: 10/0e4db686c2d5db54cb4ede3220135ff57a1116a8de78bc426ff09c5d949876d934a77d505c6beb78d7d98812ce81075cccc1df3a0740d897abc41e6f5e4c66af
   languageName: node
   linkType: hard
 
@@ -4462,12 +4462,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.548.0":
-  version: 0.548.0
-  resolution: "lucide-react@npm:0.548.0"
+"lucide-react@npm:^0.552.0":
+  version: 0.552.0
+  resolution: "lucide-react@npm:0.552.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/70c3065daf44fb997fdec330c539c82cd3309dec6e287ef741c9b616695c92c16776d2fe5709776281b8eab02d30c38d8c7b79af9c65c08128e1cf950fc92f37
+  checksum: 10/999bf595f65f0a94ab42383cdd61bb903c4c333cb96efc618f8ab9539b5c9892e1ab231f8698a7be3d430a1331d56c0f79cc75d2b50ddba884f74721dc5eff03
   languageName: node
   linkType: hard
 
@@ -6500,12 +6500,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"simple-icons-astro@npm:^15.17.0":
-  version: 15.17.0
-  resolution: "simple-icons-astro@npm:15.17.0"
+"simple-icons-astro@npm:^15.18.0":
+  version: 15.18.0
+  resolution: "simple-icons-astro@npm:15.18.0"
   peerDependencies:
     astro: ">=2.7.1"
-  checksum: 10/2c3bc249384da08e5aa1d1a62a115443635c970ad0bdcb3c39572a00aa8b95303eb69b00989442f5a0d9ad2352b1b3412a018ea1e60cd3a4c5fe95fa7d31a996
+  checksum: 10/d4af4c82344d380dd123acbae24531ff13daed97869259984535c3aca96c7e217d842e52bf1391dc44e9069a138364bf576f15a380a19cd0e0b327bdb0bd0e37
   languageName: node
   linkType: hard
 
@@ -6623,8 +6623,8 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@astrojs/check": "npm:^0.9.5"
-    "@astrojs/mdx": "npm:^4.3.8"
-    "@astrojs/react": "npm:^4.4.0"
+    "@astrojs/mdx": "npm:^4.3.9"
+    "@astrojs/react": "npm:^4.4.1"
     "@astrojs/sitemap": "npm:^3.6.0"
     "@commitlint/cli": "npm:^20.1.0"
     "@commitlint/config-conventional": "npm:^20.0.0"
@@ -6633,13 +6633,13 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.2.3"
     "@tailwindcss/typography": "npm:^0.5.19"
     "@tailwindcss/vite": "npm:^4.1.16"
-    "@types/node": "npm:^22.18.12"
+    "@types/node": "npm:^22.18.13"
     "@types/react": "npm:^19.2.2"
     "@types/react-dom": "npm:^19.2.2"
-    astro: "npm:^5.15.1"
+    astro: "npm:^5.15.3"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
-    lucide-react: "npm:^0.548.0"
+    lucide-react: "npm:^0.552.0"
     prettier: "npm:^3.6.2"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:^0.7.1"
@@ -6647,7 +6647,7 @@ __metadata:
     react: "npm:^19.2.0"
     react-dom: "npm:^19.2.0"
     schema-dts: "npm:^1.1.5"
-    simple-icons-astro: "npm:^15.17.0"
+    simple-icons-astro: "npm:^15.18.0"
     tailwind-merge: "npm:^3.3.1"
     tailwindcss: "npm:^4.1.16"
     tw-animate-css: "npm:^1.4.0"
@@ -7275,9 +7275,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.3.6":
-  version: 6.3.6
-  resolution: "vite@npm:6.3.6"
+"vite@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "vite@npm:6.4.1"
   dependencies:
     esbuild: "npm:^0.25.0"
     fdir: "npm:^6.4.4"
@@ -7326,7 +7326,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/8b8b6fe12318ca457396bf2053df7056cf4810f1d4a43b36b6afe59860e32b749c0685a290fe8a973b0d3da179ceec4c30cebbd3c91d0c47fbcf6436b17bdeef
+  checksum: 10/ea2083b6b1d1c9e85a13d6797ae989aa1dbc27a5c054319c71141934bf3f8dba8d54b510618040f95751148da63787f28f043df7458a194c81f8b6d8a2d32844
   languageName: node
   linkType: hard
 
