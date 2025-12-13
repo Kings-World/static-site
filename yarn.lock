@@ -2165,7 +2165,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^24.10.2":
+"@types/node@npm:*, @types/node@npm:^24.10.3":
   version: 24.10.3
   resolution: "@types/node@npm:24.10.3"
   dependencies:
@@ -6773,7 +6773,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.2.4"
     "@tailwindcss/typography": "npm:^0.5.19"
     "@tailwindcss/vite": "npm:^4.1.17"
-    "@types/node": "npm:^24.10.2"
+    "@types/node": "npm:^24.10.3"
     "@types/react": "npm:^19.2.7"
     "@types/react-dom": "npm:^19.2.3"
     astro: "npm:^5.16.5"
