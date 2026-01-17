@@ -2488,9 +2488,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^5.16.7":
-  version: 5.16.8
-  resolution: "astro@npm:5.16.8"
+"astro@npm:^5.16.9":
+  version: 5.16.11
+  resolution: "astro@npm:5.16.11"
   dependencies:
     "@astrojs/compiler": "npm:^2.13.0"
     "@astrojs/internal-helpers": "npm:0.7.5"
@@ -2510,8 +2510,8 @@ __metadata:
     cssesc: "npm:^3.0.0"
     debug: "npm:^4.4.3"
     deterministic-object-hash: "npm:^2.0.2"
-    devalue: "npm:^5.6.1"
-    diff: "npm:^5.2.0"
+    devalue: "npm:^5.6.2"
+    diff: "npm:^8.0.3"
     dlv: "npm:^1.1.3"
     dset: "npm:^3.1.4"
     es-module-lexer: "npm:^1.7.0"
@@ -2561,7 +2561,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/9ec077bfad328f1930094b4dd8fe1b1964c05cdb78f3c1e4d6494b4fe908209d2114abe33a621f4dd1da08964240a7d71f8a26029ba4ee482e661d67ae972780
+  checksum: 10/3bebfd5b98eda04279acba15bdca5039ca50b2436613cd665bf043507dcd15750096f7d7add29b38d46c5689bd0dc34a517dc4aa02c669bd8e6937d349013b40
   languageName: node
   linkType: hard
 
@@ -3102,10 +3102,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devalue@npm:^5.6.1":
-  version: 5.6.1
-  resolution: "devalue@npm:5.6.1"
-  checksum: 10/6da13a080514048a4fca231459c44222dd43b9c89cba0586c206592a8f7fa91a5e37952b11769daeaafbd2c4eb5df0b121234adb753a5dc737406312a314545f
+"devalue@npm:^5.6.2":
+  version: 5.6.2
+  resolution: "devalue@npm:5.6.2"
+  checksum: 10/734b57d917e45b534007e3b5055c031e4e3fcf3c3a44e1b4177e998f30e077e4d280b59abe0cc0ca9055a18e90266e31f578129e83e105e63e9680998a3c2a8a
   languageName: node
   linkType: hard
 
@@ -3118,10 +3118,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "diff@npm:5.2.0"
-  checksum: 10/01b7b440f83a997350a988e9d2f558366c0f90f15be19f4aa7f1bb3109a4e153dfc3b9fbf78e14ea725717017407eeaa2271e3896374a0181e8f52445740846d
+"diff@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "diff@npm:8.0.3"
+  checksum: 10/52f957e1fa53db4616ff5f4811b92b22b97a160c12a2f86f22debd4181227b0f6751aa8fd711d6a8fcf4618acb13b86bc702e6d9d6d6ed82acfd00c9cb26ace2
   languageName: node
   linkType: hard
 
@@ -6705,7 +6705,7 @@ __metadata:
     "@types/node": "npm:^24.10.8"
     "@types/react": "npm:^19.2.7"
     "@types/react-dom": "npm:^19.2.3"
-    astro: "npm:^5.16.7"
+    astro: "npm:^5.16.9"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^0.562.0"
