@@ -2865,9 +2865,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "astro@npm:6.1.1"
+"astro@npm:^6.1.2":
+  version: 6.1.3
+  resolution: "astro@npm:6.1.3"
   dependencies:
     "@astrojs/compiler": "npm:^3.0.1"
     "@astrojs/internal-helpers": "npm:0.8.0"
@@ -2930,7 +2930,7 @@ __metadata:
       optional: true
   bin:
     astro: bin/astro.mjs
-  checksum: 10/37575766ff9b96f2dd24f4bde6b572fb0f09740dc53936e1f88f0a88f497bfa482399b072f29060bb9fe4a0f559f8c6469724733e52824b7be4babe8e3aea7eb
+  checksum: 10/dfe6b86bfaafef79aac1c9acfdd52f26a2bbda63430f2c76636260076669d645c75e9fbcb08ebdc8f46d93a7369828d129bd2fda3498335523f618f93d80260f
   languageName: node
   linkType: hard
 
@@ -6934,7 +6934,7 @@ __metadata:
     "@types/node": "npm:^24.12.0"
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
-    astro: "npm:^6.1.1"
+    astro: "npm:^6.1.2"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^1.7.0"
