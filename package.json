@@ -44,7 +44,7 @@
         "pretty-quick": "^4.2.2",
         "tailwindcss": "^4.2.2",
         "typescript": "^6.0.2",
-        "wrangler": "^4.81.0"
+        "wrangler": "^4.81.1"
     },
     "resolutions": {
         "undici": "8.0.2"
