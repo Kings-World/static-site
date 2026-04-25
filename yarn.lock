@@ -35,15 +35,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@astrojs/internal-helpers@npm:0.8.0"
-  dependencies:
-    picomatch: "npm:^4.0.3"
-  checksum: 10/9cfeb895c167d708a8b3b7cbc0c8114c15d36ee485db136a1a2e2137a1ae8f96d9655317b789f9226ffa5e11ac2a5365da0d87a3991b4a5f72bf83d77e75a026
-  languageName: node
-  linkType: hard
-
 "@astrojs/internal-helpers@npm:0.9.0":
   version: 0.9.0
   resolution: "@astrojs/internal-helpers@npm:0.9.0"
@@ -89,35 +80,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@astrojs/markdown-remark@npm:7.1.0"
-  dependencies:
-    "@astrojs/internal-helpers": "npm:0.8.0"
-    "@astrojs/prism": "npm:4.0.1"
-    github-slugger: "npm:^2.0.0"
-    hast-util-from-html: "npm:^2.0.3"
-    hast-util-to-text: "npm:^4.0.2"
-    js-yaml: "npm:^4.1.1"
-    mdast-util-definitions: "npm:^6.0.0"
-    rehype-raw: "npm:^7.0.0"
-    rehype-stringify: "npm:^10.0.1"
-    remark-gfm: "npm:^4.0.1"
-    remark-parse: "npm:^11.0.0"
-    remark-rehype: "npm:^11.1.2"
-    remark-smartypants: "npm:^3.0.2"
-    retext-smartypants: "npm:^6.2.0"
-    shiki: "npm:^4.0.0"
-    smol-toml: "npm:^1.6.0"
-    unified: "npm:^11.0.5"
-    unist-util-remove-position: "npm:^5.0.0"
-    unist-util-visit: "npm:^5.1.0"
-    unist-util-visit-parents: "npm:^6.0.2"
-    vfile: "npm:^6.0.3"
-  checksum: 10/efb87d657cbd4c8a7e29d2156b6b6799c270706afa15db01399d8dbe22852e76b167209580808a0e28d0166b2faa5d461253aa4b64b19816a59767bf5277d323
-  languageName: node
-  linkType: hard
-
 "@astrojs/markdown-remark@npm:7.1.1":
   version: 7.1.1
   resolution: "@astrojs/markdown-remark@npm:7.1.1"
@@ -147,11 +109,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "@astrojs/mdx@npm:5.0.3"
+"@astrojs/mdx@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "@astrojs/mdx@npm:5.0.4"
   dependencies:
-    "@astrojs/markdown-remark": "npm:7.1.0"
+    "@astrojs/markdown-remark": "npm:7.1.1"
     "@mdx-js/mdx": "npm:^3.1.1"
     acorn: "npm:^8.16.0"
     es-module-lexer: "npm:^2.0.0"
@@ -166,7 +128,7 @@ __metadata:
     vfile: "npm:^6.0.3"
   peerDependencies:
     astro: ^6.0.0
-  checksum: 10/daf00cf8fd0b8dd3979051d7a7bcceb939558e6a975d033a7185f6b8c7dcc6410e81a4a201e9b7943b6d4909d7ec7ad1391681b2dc023662d378f912203439b2
+  checksum: 10/7db47176b3d75787af25a8799cb0671dacf65f036039badabe30684c08898f176c37800b6868af16b4a7345cdf021028f929ebe06a7d76af69d4dd362b5c24b4
   languageName: node
   linkType: hard
 
@@ -179,21 +141,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "@astrojs/react@npm:5.0.3"
+"@astrojs/react@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "@astrojs/react@npm:5.0.4"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.8.0"
+    "@astrojs/internal-helpers": "npm:0.9.0"
     "@vitejs/plugin-react": "npm:^5.2.0"
     devalue: "npm:^5.6.4"
     ultrahtml: "npm:^1.6.0"
-    vite: "npm:^7.3.1"
+    vite: "npm:^7.3.2"
   peerDependencies:
     "@types/react": ^17.0.50 || ^18.0.21 || ^19.0.0
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/04e65d159b2ad74a31913267859290fc1c71b8e34eaa4526c136491bec479bfc005f25b6c693f9418707993ba5d0e2855ae6c09c98a05899544a76385def8ed7
+  checksum: 10/ac0e5ef39de17f52ba8c162f26a89f5aa1263b2564dd64cdfbbc31ca0056a3d944de6e21540eaacdfe3f446dbd571065a956bbe2514fe5a8b44dabdf6dedc7bc
   languageName: node
   linkType: hard
 
@@ -2902,7 +2864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^6.1.8":
+"astro@npm:^6.1.9":
   version: 6.1.9
   resolution: "astro@npm:6.1.9"
   dependencies:
@@ -6966,8 +6928,8 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@astrojs/check": "npm:^0.9.8"
-    "@astrojs/mdx": "npm:^5.0.3"
-    "@astrojs/react": "npm:^5.0.3"
+    "@astrojs/mdx": "npm:^5.0.4"
+    "@astrojs/react": "npm:^5.0.4"
     "@astrojs/sitemap": "npm:^3.7.2"
     "@commitlint/cli": "npm:^20.5.0"
     "@commitlint/config-conventional": "npm:^20.5.0"
@@ -6979,7 +6941,7 @@ __metadata:
     "@types/node": "npm:^24.12.2"
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
-    astro: "npm:^6.1.8"
+    astro: "npm:^6.1.9"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^1.8.0"
@@ -7598,7 +7560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.3.1, vite@npm:^7.3.2":
+"vite@npm:^7.3.2":
   version: 7.3.2
   resolution: "vite@npm:7.3.2"
   dependencies:
