@@ -15,7 +15,7 @@
         "@radix-ui/react-accordion": "^1.2.12",
         "@radix-ui/react-dialog": "^1.1.15",
         "@radix-ui/react-slot": "^1.2.4",
-        "astro": "^6.3.7",
+        "astro": "^6.3.8",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^1.16.0",
@@ -30,7 +30,7 @@
         "@astrojs/check": "0.9.9",
         "@astrojs/mdx": "5.0.6",
         "@astrojs/react": "5.0.5",
-        "@astrojs/sitemap": "3.7.2",
+        "@astrojs/sitemap": "3.7.3",
         "@commitlint/cli": "21.0.1",
         "@commitlint/config-conventional": "21.0.1",
         "@tailwindcss/typography": "0.5.19",
@@ -44,7 +44,7 @@
         "pretty-quick": "4.2.2",
         "tailwindcss": "4.3.0",
         "typescript": "6.0.3",
-        "wrangler": "4.93.1"
+        "wrangler": "4.95.0"
     },
     "resolutions": {
         "undici": "8.3.0"
