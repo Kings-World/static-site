@@ -182,11 +182,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:5.0.5":
-  version: 5.0.5
-  resolution: "@astrojs/react@npm:5.0.5"
+"@astrojs/react@npm:5.0.6":
+  version: 5.0.6
+  resolution: "@astrojs/react@npm:5.0.6"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.9.1"
+    "@astrojs/internal-helpers": "npm:0.10.0"
     "@vitejs/plugin-react": "npm:^5.2.0"
     devalue: "npm:^5.6.4"
     ultrahtml: "npm:^1.6.0"
@@ -196,7 +196,7 @@ __metadata:
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/655d985ab4400acdb1e268d44b8809fce0ec4224a15dc9938de6f8a3476e43a4ab0c3e45831d408fc7d2fae6f71208bd9bc1755a7b5b9deb3ddccd8196841550
+  checksum: 10/3dda898a5f12fa32de3178cf7a9cdf974bbbc46fd664e204f0ee725bea53878e5dadf65d7c226f45eb03f75b27c8c683fc59db4641f8949fc8de0865aa8e1695
   languageName: node
   linkType: hard
 
@@ -2868,7 +2868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^6.3.8":
+"astro@npm:^6.4.0":
   version: 6.4.2
   resolution: "astro@npm:6.4.2"
   dependencies:
@@ -6595,7 +6595,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:0.9.9"
     "@astrojs/mdx": "npm:5.0.6"
-    "@astrojs/react": "npm:5.0.5"
+    "@astrojs/react": "npm:5.0.6"
     "@astrojs/sitemap": "npm:3.7.3"
     "@commitlint/cli": "npm:21.0.1"
     "@commitlint/config-conventional": "npm:21.0.1"
@@ -6607,7 +6607,7 @@ __metadata:
     "@types/node": "npm:24.12.4"
     "@types/react": "npm:19.2.15"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:^6.3.8"
+    astro: "npm:^6.4.0"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^1.17.0"
