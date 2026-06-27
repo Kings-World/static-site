@@ -31,8 +31,8 @@
         "@astrojs/mdx": "6.0.3",
         "@astrojs/react": "5.0.7",
         "@astrojs/sitemap": "3.7.3",
-        "@commitlint/cli": "21.0.2",
-        "@commitlint/config-conventional": "21.0.2",
+        "@commitlint/cli": "21.1.0",
+        "@commitlint/config-conventional": "21.1.0",
         "@tailwindcss/typography": "0.5.20",
         "@tailwindcss/vite": "4.3.1",
         "@types/node": "24.13.2",
@@ -44,7 +44,7 @@
         "pretty-quick": "4.2.2",
         "tailwindcss": "4.3.1",
         "typescript": "6.0.3",
-        "wrangler": "4.102.0"
+        "wrangler": "4.104.0"
     },
     "resolutions": {
         "undici": "8.5.0"
