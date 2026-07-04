@@ -243,9 +243,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@astrojs/mdx@npm:7.0.0"
+"@astrojs/mdx@npm:7.0.1":
+  version: 7.0.1
+  resolution: "@astrojs/mdx@npm:7.0.1"
   dependencies:
     "@astrojs/internal-helpers": "npm:0.10.0"
     "@astrojs/markdown-remark": "npm:7.2.0"
@@ -262,12 +262,12 @@ __metadata:
     unist-util-visit: "npm:^5.1.0"
     vfile: "npm:^6.0.3"
   peerDependencies:
-    "@astrojs/markdown-satteri": ^0.3.1-alpha.0
-    astro: ^7.0.0-alpha.0
+    "@astrojs/markdown-satteri": ^0.3.1
+    astro: ^7.0.0
   peerDependenciesMeta:
     "@astrojs/markdown-satteri":
       optional: true
-  checksum: 10/5bb9e9dedddcfedd4fd7578fe75a3899c3adbeeafc654796c7e24d20cfb4ad15413ba337158c50464cb3bd8a726bc4ebd507a4eaa07055606beb31d175b932a6
+  checksum: 10/eaeca487a6d27f7992e12239989896f09f703871b20d70cc485a349f6cfa7e49291ee8e09f63d762a0e2ae80aa830605e4fe1de2c0a2daec2274963c7f6b3485
   languageName: node
   linkType: hard
 
@@ -3018,7 +3018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.0.4":
+"astro@npm:^7.0.5":
   version: 7.0.6
   resolution: "astro@npm:7.0.6"
   dependencies:
@@ -6682,7 +6682,7 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.9"
-    "@astrojs/mdx": "npm:7.0.0"
+    "@astrojs/mdx": "npm:7.0.1"
     "@astrojs/react": "npm:6.0.0"
     "@astrojs/sitemap": "npm:3.7.3"
     "@commitlint/cli": "npm:21.2.0"
@@ -6695,7 +6695,7 @@ __metadata:
     "@types/node": "npm:24.13.2"
     "@types/react": "npm:19.2.17"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:^7.0.4"
+    astro: "npm:^7.0.5"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^1.23.0"
