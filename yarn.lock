@@ -138,22 +138,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:0.10.0":
-  version: 0.10.0
-  resolution: "@astrojs/internal-helpers@npm:0.10.0"
-  dependencies:
-    "@types/hast": "npm:^3.0.4"
-    "@types/mdast": "npm:^4.0.4"
-    js-yaml: "npm:^4.1.1"
-    picomatch: "npm:^4.0.4"
-    retext-smartypants: "npm:^6.2.0"
-    shiki: "npm:^4.0.2"
-    smol-toml: "npm:^1.6.0"
-    unified: "npm:^11.0.5"
-  checksum: 10/d3751386a5293f47de19db81d599a1930f717fd357ca75b2a4b17310b4443c3d1e7a375421ae68e2922f05d965b95293eaa463d45810cdaf7120078a8d279d68
-  languageName: node
-  linkType: hard
-
 "@astrojs/internal-helpers@npm:0.10.1":
   version: 0.10.1
   resolution: "@astrojs/internal-helpers@npm:0.10.1"
@@ -206,11 +190,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:7.2.0":
-  version: 7.2.0
-  resolution: "@astrojs/markdown-remark@npm:7.2.0"
+"@astrojs/markdown-remark@npm:7.2.1":
+  version: 7.2.1
+  resolution: "@astrojs/markdown-remark@npm:7.2.1"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.10.0"
+    "@astrojs/internal-helpers": "npm:0.10.1"
     "@astrojs/prism": "npm:4.0.2"
     github-slugger: "npm:^2.0.0"
     hast-util-from-html: "npm:^2.0.3"
@@ -227,7 +211,7 @@ __metadata:
     unist-util-visit: "npm:^5.1.0"
     unist-util-visit-parents: "npm:^6.0.2"
     vfile: "npm:^6.0.3"
-  checksum: 10/6f18009333e5bd8516501240cc18b37d53267396be63399862a1a47a78c1df46d6ebf6a75427f0fea2e15ce52cde300390d963f3ba724cab04e982d8d1d06393
+  checksum: 10/5a888909f67dc1fb9505894876b6bd6ccb71e4fcbbed8aa0d75f64d0a2d3c93bbc517773b80fab077a3932152503298eab000f90460cf70c379e7796f90bbdb6
   languageName: node
   linkType: hard
 
@@ -243,12 +227,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:7.0.1":
-  version: 7.0.1
-  resolution: "@astrojs/mdx@npm:7.0.1"
+"@astrojs/mdx@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@astrojs/mdx@npm:7.0.2"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.10.0"
-    "@astrojs/markdown-remark": "npm:7.2.0"
+    "@astrojs/internal-helpers": "npm:0.10.1"
+    "@astrojs/markdown-remark": "npm:7.2.1"
     "@mdx-js/mdx": "npm:^3.1.1"
     acorn: "npm:^8.16.0"
     es-module-lexer: "npm:^2.0.0"
@@ -267,7 +251,7 @@ __metadata:
   peerDependenciesMeta:
     "@astrojs/markdown-satteri":
       optional: true
-  checksum: 10/eaeca487a6d27f7992e12239989896f09f703871b20d70cc485a349f6cfa7e49291ee8e09f63d762a0e2ae80aa830605e4fe1de2c0a2daec2274963c7f6b3485
+  checksum: 10/38a7b792566ea096a659e70aa9b9c7d29f120be7f1f96f89faadbdce72bb4c0fc77923133f5aa2b02768d85e24809a56936f0330127309f1bebd433158544a7c
   languageName: node
   linkType: hard
 
@@ -280,11 +264,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@astrojs/react@npm:6.0.0"
+"@astrojs/react@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@astrojs/react@npm:6.0.1"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.10.0"
+    "@astrojs/internal-helpers": "npm:0.10.1"
     "@vitejs/plugin-react": "npm:^5.2.0"
     devalue: "npm:^5.8.1"
     ultrahtml: "npm:^1.6.0"
@@ -294,7 +278,7 @@ __metadata:
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/9898ea9c8b2058e0145b9ce43e5f878a384faf29f359df52ee88080378660387384e69beda7406f0a7d36e82f4b6961372e276fe04876fb7ce7bf940af594d43
+  checksum: 10/5482849f303e864bfa6e8ea4161fb8f020c1ceafd9e98434748f0edb0d676deb4f9d23689556506d94c2f7485ee5c7e4f9e3a71c284adfc78913b7c68618a55b
   languageName: node
   linkType: hard
 
@@ -3018,7 +3002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.0.5":
+"astro@npm:^7.0.6":
   version: 7.0.6
   resolution: "astro@npm:7.0.6"
   dependencies:
@@ -6682,8 +6666,8 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.9"
-    "@astrojs/mdx": "npm:7.0.1"
-    "@astrojs/react": "npm:6.0.0"
+    "@astrojs/mdx": "npm:7.0.2"
+    "@astrojs/react": "npm:6.0.1"
     "@astrojs/sitemap": "npm:3.7.3"
     "@commitlint/cli": "npm:21.2.0"
     "@commitlint/config-conventional": "npm:21.2.0"
@@ -6695,7 +6679,7 @@ __metadata:
     "@types/node": "npm:24.13.2"
     "@types/react": "npm:19.2.17"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:^7.0.5"
+    astro: "npm:^7.0.6"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     lucide-react: "npm:^1.23.0"
