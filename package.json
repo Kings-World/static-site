@@ -15,7 +15,7 @@
         "@radix-ui/react-accordion": "^1.2.20",
         "@radix-ui/react-dialog": "^1.1.23",
         "@radix-ui/react-slot": "^1.3.3",
-        "astro": "^7.1.5",
+        "astro": "^7.1.6",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^1.27.0",
@@ -49,5 +49,5 @@
     "resolutions": {
         "undici": "8.9.0"
     },
-    "packageManager": "yarn@4.17.1"
+    "packageManager": "yarn@4.18.0"
 }
