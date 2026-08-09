@@ -2335,22 +2335,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.3.0":
-  version: 5.4.0
-  resolution: "@rollup/pluginutils@npm:5.4.0"
-  dependencies:
-    "@types/estree": "npm:^1.0.0"
-    estree-walker: "npm:^2.0.2"
-    picomatch: "npm:^4.0.2"
-  peerDependencies:
-    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-  peerDependenciesMeta:
-    rollup:
-      optional: true
-  checksum: 10/eb1687d52c3847a27c5f6e790ee31a6a356c23e3c16222b4d7cf31d48dfaad2edc13e49355da9f2c59c90c1220cb089b36780cb95dc6d0ee54587f61cc5cf080
-  languageName: node
-  linkType: hard
-
 "@shikijs/core@npm:4.3.1":
   version: 4.3.1
   resolution: "@shikijs/core@npm:4.3.1"
@@ -3071,9 +3055,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.1.6":
-  version: 7.1.6
-  resolution: "astro@npm:7.1.6"
+"astro@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "astro@npm:7.2.0"
   dependencies:
     "@astrojs/compiler-rs": "npm:^0.3.2"
     "@astrojs/internal-helpers": "npm:0.10.2"
@@ -3082,7 +3066,6 @@ __metadata:
     "@capsizecss/unpack": "npm:^4.0.0"
     "@clack/prompts": "npm:^1.1.0"
     "@oslojs/encoding": "npm:^1.1.0"
-    "@rollup/pluginutils": "npm:^5.3.0"
     am-i-vibing: "npm:^0.4.0"
     aria-query: "npm:^5.3.2"
     axobject-query: "npm:^4.1.0"
@@ -3139,7 +3122,7 @@ __metadata:
       optional: true
   bin:
     astro: ./bin/astro.mjs
-  checksum: 10/7576638525e56fc637c3855b9dfc401a73df98b23a00ef0ec9f4c23e4e920a98830e0a7b5d9cdc22ef136ad809f30840d8330c3f66e6f40694d66c11fecd20b2
+  checksum: 10/db49c5a5eb7aaa6fe4220de6660157e1f8fd16fc07e6f5b05cbea3f2a176ee12fc2b775395adf28a2b062f485d8d1aa4b000d407326b751395e24695be175e8b
   languageName: node
   linkType: hard
 
@@ -3892,13 +3875,6 @@ __metadata:
     "@types/estree-jsx": "npm:^1.0.0"
     "@types/unist": "npm:^3.0.0"
   checksum: 10/e3c39d34c8b42fc2067dfa64d460f754b43cca4b573b031a5e5bb185e02c4efc753353197815bbb094b8149a781ab76f18116bec8056b5ff375162e68bffa0bd
-  languageName: node
-  linkType: hard
-
-"estree-walker@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "estree-walker@npm:2.0.2"
-  checksum: 10/b02109c5d46bc2ed47de4990eef770f7457b1159a229f0999a09224d2b85ffeed2d7679cffcff90aeb4448e94b0168feb5265b209cdec29aad50a3d6e93d21e2
   languageName: node
   linkType: hard
 
@@ -4767,12 +4743,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^1.28.0":
-  version: 1.28.0
-  resolution: "lucide-react@npm:1.28.0"
+"lucide-react@npm:^1.29.0":
+  version: 1.30.0
+  resolution: "lucide-react@npm:1.30.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/8797d879a4a7767565807333b430bda73d935274fd8ec9fe6f2d6932bb973085684bbf305f03c74aab8ba9732ae2c699868a0d109874be55a2bbc36d8c100dec
+  checksum: 10/54b95f19216f8fc7c6ae773928ce2717708263db25a339d5c8d89e62c6f64512fd4a50aa65a3cede4909ec05083c1ec3d1743e84f2d7ea89bf237e9cfeb8d1aa
   languageName: node
   linkType: hard
 
@@ -6782,10 +6758,10 @@ __metadata:
     "@types/node": "npm:24.13.3"
     "@types/react": "npm:19.2.18"
     "@types/react-dom": "npm:19.2.4"
-    astro: "npm:^7.1.6"
+    astro: "npm:^7.2.0"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
-    lucide-react: "npm:^1.28.0"
+    lucide-react: "npm:^1.29.0"
     prettier: "npm:3.9.6"
     prettier-plugin-astro: "npm:0.14.1"
     prettier-plugin-tailwindcss: "npm:0.8.1"
