@@ -2811,12 +2811,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.2.5":
-  version: 19.2.5
-  resolution: "@types/react-dom@npm:19.2.5"
+"@types/react-dom@npm:19.2.6":
+  version: 19.2.6
+  resolution: "@types/react-dom@npm:19.2.6"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10/e6b752ad923b70638a44bb537d2866bed98f08bba973bc2199365875c003abe1e5f0e5a6d73ba8778e97f13eca36fdb2ab47f530793238eff92e4df04df18f70
+  checksum: 10/6e6fb54838a9e51ab4bf3a865bc1b1e841b474835bec0aab3d1b4ae0ed666c328d682c54a40c4b4239697f30d3f08d50029c4f5d1b39d978e506f1b640d7fb24
   languageName: node
   linkType: hard
 
@@ -4528,12 +4528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^1.39.0":
-  version: 1.40.0
-  resolution: "lucide-react@npm:1.40.0"
+"lucide-react@npm:^1.40.0":
+  version: 1.41.0
+  resolution: "lucide-react@npm:1.41.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/0700a5e1a907c3123f88a62fe2f83e1d711011514fbe7dd8125cbc0d3318fdaa7c00099b3806f7016221cac5009c2cfc108b24e533528ecd3a743a52dbfe8fe2
+  checksum: 10/4dcc98122b034e6ae8df38099a49585d697723ca6e554961ec192d7ac84ca1e80fbd4898ccf71fa28fb0a75bf605350f06e6c2313b351a00e223ed8a1172eed1
   languageName: node
   linkType: hard
 
@@ -5682,11 +5682,11 @@ __metadata:
     "@tailwindcss/vite": "npm:4.3.3"
     "@types/node": "npm:24.13.3"
     "@types/react": "npm:19.2.18"
-    "@types/react-dom": "npm:19.2.5"
+    "@types/react-dom": "npm:19.2.6"
     astro: "npm:^7.2.10"
     class-variance-authority: "npm:^0.7.1"
     cn: "npm:^0.2.4"
-    lucide-react: "npm:^1.39.0"
+    lucide-react: "npm:^1.40.0"
     prettier: "npm:3.9.6"
     prettier-plugin-astro: "npm:0.14.1"
     prettier-plugin-tailwindcss: "npm:0.8.1"
