@@ -111,22 +111,19 @@ const webPageSchema = createWebPageSchema(
             type="application/ld+json"
             set:html={JSON.stringify(organizationSchema)}
             is:inline
-        />
+        ></script>
         <script
             type="application/ld+json"
             set:html={JSON.stringify(webPageSchema)}
             is:inline
-        />
-
-        {
-            schemas?.map((schema) => (
-                <script
-                    type="application/ld+json"
-                    set:html={JSON.stringify(schema)}
-                    is:inline
-                />
-            ))
-        }
+        ></script>
+        {schemas?.map((schema) => (
+            <script
+                type="application/ld+json"
+                set:html={JSON.stringify(schema)}
+                is:inline
+            ></script>
+        ))}
 
         <ClientRouter />
     </head>
