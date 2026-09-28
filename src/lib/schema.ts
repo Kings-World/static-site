@@ -93,6 +93,8 @@ function createOrganizationSchema() {
         logo: {
             "@type": "ImageObject",
             url: `${siteConfig.url}/logo.png`,
+            width: "512",
+            height: "512",
         },
         description: siteConfig.description,
         sameAs: [links.github, links.discord],
@@ -154,6 +156,10 @@ export function createFAQSchema(url: URL) {
         "@type": "FAQPage",
         "@id": pageIds.faq(url),
         isPartOf: {
+            "@type": "WebPage",
+            "@id": pageIds.webpage(url),
+        },
+        mainEntityOfPage: {
             "@type": "WebPage",
             "@id": pageIds.webpage(url),
         },
