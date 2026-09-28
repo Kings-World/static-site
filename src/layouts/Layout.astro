@@ -2,17 +2,14 @@
 import "~/styles/globals.css";
 
 import { ClientRouter } from "astro:transitions";
+import type { Thing } from "schema-dts";
 import { siteConfig } from "~/lib/constants";
-import {
-    createOrganizationSchema,
-    createWebPageSchema,
-    type Schema,
-} from "~/lib/schema";
+import { createSchemaGraph } from "~/lib/schema";
 
 export interface Props {
     title?: string;
     description?: string;
-    schemas?: Schema[];
+    schemas?: Thing[];
 }
 
 const { title, description, schemas } = Astro.props;
@@ -22,12 +19,12 @@ const logoURL = new URL("/logo.png", Astro.url);
 const parsedTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title;
 const parsedDescription = description ?? siteConfig.description;
 
-const organizationSchema = createOrganizationSchema();
-const webPageSchema = createWebPageSchema(
-    parsedTitle,
-    parsedDescription,
-    Astro.url,
-);
+const schemaGraph = createSchemaGraph({
+    title: parsedTitle,
+    description: parsedDescription,
+    url: Astro.url,
+    schemas,
+});
 ---
 
 <!doctype html>
@@ -109,22 +106,9 @@ const webPageSchema = createWebPageSchema(
 
         <script
             type="application/ld+json"
-            set:html={JSON.stringify(organizationSchema)}
+            set:html={JSON.stringify(schemaGraph)}
             is:inline
         ></script>
-        <script
-            type="application/ld+json"
-            set:html={JSON.stringify(webPageSchema)}
-            is:inline
-        ></script>
-        {schemas?.map((schema) => (
-            <script
-                type="application/ld+json"
-                set:html={JSON.stringify(schema)}
-                is:inline
-            ></script>
-        ))}
-
         <ClientRouter />
     </head>
     <body class="grid min-h-lvh grid-rows-[auto_1fr_auto] antialiased">
