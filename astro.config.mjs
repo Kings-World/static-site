@@ -6,9 +6,11 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
+import { siteConfig } from "~/lib/constants";
+
 // https://astro.build/config
 export default defineConfig({
-    site: "https://kings-world.net",
+    site: siteConfig.url,
     markdown: {
         shikiConfig: {
             theme: "dark-plus",

@@ -1,46 +1,110 @@
 import type {
     Article,
     FAQPage,
+    Graph,
     Organization,
     Person,
     SoftwareApplication,
-    Thing,
     WebPage,
     WebSite,
-    WithContext,
 } from "schema-dts";
 import { links, siteConfig } from "./constants";
 
-const urlWithTrailingSlash = `${siteConfig.url}/`;
+interface SchemaGraphData {
+    title: string;
+    description: string;
+    url: URL;
+    schemas?: Graph["@graph"];
+}
 
-export type Schema<T extends Thing = Thing> = WithContext<T>;
+function getPageAnchorId(url: URL, fragment: string) {
+    const base = url.href.endsWith("/") ? url.href : `${url.href}/`;
+    return `${base}${fragment}`;
+}
 
-const serenSchema: Person = {
-    "@type": "Person",
-    name: "Seren_Modz 21",
-    url: "https://seren.dev",
-    sameAs: ["https://github.com/SerenModz21", links.sponsor],
-    jobTitle:
-        "Lead Developer, Software Engineer, Software Developer, DevOps Engineer",
-    knowsAbout: ["Programming", "TypeScript", "Software Development", "DevOps"],
-    knowsLanguage: {
-        "@type": "Language",
-        name: "English",
-        alternateName: "en",
-    },
+const globalIds = {
+    organization: `${siteConfig.url}/#organization`,
+    website: `${siteConfig.url}/#website`,
 };
 
-export function createOrganizationSchema(): WithContext<Organization> {
+const pageIds = {
+    webpage: (url: URL) => getPageAnchorId(url, "#webpage"),
+    software: (url: URL) => getPageAnchorId(url, "#software"),
+    faq: (url: URL) => getPageAnchorId(url, "#faq"),
+    article: (url: URL) => getPageAnchorId(url, "#article"),
+};
+
+export function createSchemaGraph({
+    title,
+    description,
+    url,
+    schemas = [],
+}: SchemaGraphData) {
     return {
         "@context": "https://schema.org",
+        "@graph": [
+            createSerenPersonSchema(),
+            createOrganizationSchema(),
+            createWebPageSchema(title, description, url),
+            createWebSiteSchema(),
+            ...schemas,
+        ],
+    } satisfies Graph;
+}
+
+function createSerenPersonSchema() {
+    return {
+        "@type": "Person",
+        "@id": "https://seren.dev",
+        name: "Seren_Modz 21",
+        url: "https://seren.dev",
+        sameAs: ["https://github.com/SerenModz21", links.sponsor],
+        jobTitle: [
+            "Lead Developer",
+            "Software Engineer",
+            "Software Developer",
+            "DevOps Engineer",
+        ],
+        knowsAbout: [
+            "Programming",
+            "TypeScript",
+            "Software Development",
+            "DevOps",
+        ],
+        knowsLanguage: {
+            "@type": "Language",
+            name: "English",
+            alternateName: "en",
+        },
+        worksFor: {
+            "@type": "Organization",
+            "@id": globalIds.organization,
+        },
+    } satisfies Person;
+}
+
+function createOrganizationSchema() {
+    return {
         "@type": "Organization",
+        "@id": globalIds.organization,
         name: siteConfig.name,
-        url: urlWithTrailingSlash,
-        logo: `${siteConfig.url}/logo.png`,
+        url: `${siteConfig.url}/`,
+        logo: {
+            "@type": "ImageObject",
+            url: `${siteConfig.url}/logo.png`,
+        },
         description: siteConfig.description,
         sameAs: [links.github, links.discord],
-        founder: serenSchema,
-        member: [serenSchema],
+        founder: {
+            "@type": "Person",
+            "@id": "https://seren.dev",
+        },
+        member: [
+            {
+                "@type": "Person",
+                "@id": "https://seren.dev",
+            },
+        ],
         knowsAbout: [
             "Discord Bots",
             "Server Management",
@@ -54,41 +118,44 @@ export function createOrganizationSchema(): WithContext<Organization> {
             name: "English",
             alternateName: "en",
         },
-    };
+    } satisfies Organization;
 }
 
-export function createWebPageSchema(
-    title: string,
-    description: string,
-    url: URL,
-): WithContext<WebPage> {
+function createWebPageSchema(title: string, description: string, url: URL) {
     return {
-        "@context": "https://schema.org",
         "@type": "WebPage",
+        "@id": pageIds.webpage(url),
         name: title,
         description: description,
         url: url.toString(),
         isPartOf: {
             "@type": "WebSite",
-            name: siteConfig.name,
-            url: urlWithTrailingSlash,
+            "@id": globalIds.website,
         },
-    };
+    } satisfies WebPage;
 }
 
-export function createWebSiteSchema(): WithContext<WebSite> {
+function createWebSiteSchema() {
     return {
-        "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": globalIds.website,
         name: siteConfig.name,
-        url: urlWithTrailingSlash,
-    };
+        url: `${siteConfig.url}/`,
+        publisher: {
+            "@type": "Organization",
+            "@id": globalIds.organization,
+        },
+    } satisfies WebSite;
 }
 
-export function createFAQSchema(): WithContext<FAQPage> {
+export function createFAQSchema(url: URL) {
     return {
-        "@context": "https://schema.org",
         "@type": "FAQPage",
+        "@id": pageIds.faq(url),
+        isPartOf: {
+            "@type": "WebPage",
+            "@id": pageIds.webpage(url),
+        },
         mainEntity: [
             {
                 "@type": "Question",
@@ -107,15 +174,15 @@ export function createFAQSchema(): WithContext<FAQPage> {
                 },
             },
         ],
-    };
+    } satisfies FAQPage;
 }
 
-export function createSoftwareSchema(): WithContext<SoftwareApplication> {
+export function createSoftwareSchema(url: URL) {
     return {
-        "@context": "https://schema.org",
         "@type": "SoftwareApplication",
+        "@id": pageIds.software(url),
         name: "Kings Beta",
-        applicationCategory: "UtilityApplication, ChatBot, DiscordBot",
+        applicationCategory: "UtilityApplication",
         description:
             "Kings Beta is a feature-rich Discord bot offering moderation tools, server automation, starboard functionality, leveling systems, and Twitch notifications.",
         softwareVersion: "Beta",
@@ -123,10 +190,9 @@ export function createSoftwareSchema(): WithContext<SoftwareApplication> {
             "Moderation, Automation, Starboard, Leveling, Twitch notifications, Utilities",
         author: {
             "@type": "Organization",
-            name: siteConfig.name,
-            url: urlWithTrailingSlash,
+            "@id": globalIds.website,
         },
-    };
+    } satisfies SoftwareApplication;
 }
 
 export function createLegalPageSchema(
@@ -135,10 +201,10 @@ export function createLegalPageSchema(
     url: URL,
     datePublished: string,
     dateModified: string,
-): Schema<Article> {
+) {
     return {
-        "@context": "https://schema.org",
         "@type": "Article",
+        "@id": pageIds.article(url),
         name: title,
         description: description,
         url: url.toString(),
@@ -146,8 +212,11 @@ export function createLegalPageSchema(
         dateModified: dateModified,
         isPartOf: {
             "@type": "WebSite",
-            name: siteConfig.name,
-            url: urlWithTrailingSlash,
+            "@id": globalIds.website,
         },
-    };
+        about: {
+            "@type": "WebSite",
+            "@id": globalIds.website,
+        },
+    } satisfies Article;
 }
