@@ -58,6 +58,9 @@ function createSerenPersonSchema() {
         "@type": "Person",
         "@id": globalIds.seren,
         name: "Seren_Modz 21",
+        givenName: "Seren",
+        familyName: "Modz",
+        alternateName: "SerenModz21",
         url: "https://seren.dev/",
         sameAs: ["https://github.com/SerenModz21", links.sponsor],
         jobTitle: [
