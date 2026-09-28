@@ -25,6 +25,7 @@ function getPageAnchorId(url: URL, fragment: string) {
 const globalIds = {
     organization: `${siteConfig.url}/#organization`,
     website: `${siteConfig.url}/#website`,
+    seren: "https://seren.dev/#person",
 };
 
 const pageIds = {
@@ -55,9 +56,9 @@ export function createSchemaGraph({
 function createSerenPersonSchema() {
     return {
         "@type": "Person",
-        "@id": "https://seren.dev",
+        "@id": globalIds.seren,
         name: "Seren_Modz 21",
-        url: "https://seren.dev",
+        url: "https://seren.dev/",
         sameAs: ["https://github.com/SerenModz21", links.sponsor],
         jobTitle: [
             "Lead Developer",
@@ -97,12 +98,12 @@ function createOrganizationSchema() {
         sameAs: [links.github, links.discord],
         founder: {
             "@type": "Person",
-            "@id": "https://seren.dev",
+            "@id": globalIds.seren,
         },
         member: [
             {
                 "@type": "Person",
-                "@id": "https://seren.dev",
+                "@id": globalIds.seren,
             },
         ],
         knowsAbout: [
