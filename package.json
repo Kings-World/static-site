@@ -15,7 +15,7 @@
         "@radix-ui/react-accordion": "^1.2.21",
         "@radix-ui/react-dialog": "^1.2.0",
         "@radix-ui/react-slot": "^1.4.0",
-        "astro": "^7.3.7",
+        "astro": "^7.3.8",
         "class-variance-authority": "^0.7.1",
         "cn": "^0.4.0",
         "lucide-react": "^1.53.0",
@@ -43,7 +43,7 @@
         "pretty-quick": "4.2.2",
         "tailwindcss": "4.3.3",
         "typescript": "6.0.3",
-        "wrangler": "4.148.0"
+        "wrangler": "4.149.0"
     },
     "resolutions": {
         "undici": "8.11.2"
