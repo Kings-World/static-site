@@ -153,22 +153,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:0.13.0":
-  version: 0.13.0
-  resolution: "@astrojs/internal-helpers@npm:0.13.0"
-  dependencies:
-    "@types/hast": "npm:^3.0.5"
-    "@types/mdast": "npm:^4.0.4"
-    picomatch: "npm:^4.0.7"
-    retext-smartypants: "npm:^6.2.0"
-    shiki: "npm:^4.5.0"
-    smol-toml: "npm:^1.9.1"
-    unified: "npm:^11.0.5"
-    yaml: "npm:^2.9.1"
-  checksum: 10/db35e4b1a5987dfc95a8b7ddcfc7d127088f245314ffbddc0e9e9a14880e1aebaf333cac23d5d7412f87ba16d19f2275788217a59c827f42ab5b69e130b66ae7
-  languageName: node
-  linkType: hard
-
 "@astrojs/internal-helpers@npm:0.13.1":
   version: 0.13.1
   resolution: "@astrojs/internal-helpers@npm:0.13.1"
@@ -220,18 +204,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-satteri@npm:0.4.6":
-  version: 0.4.6
-  resolution: "@astrojs/markdown-satteri@npm:0.4.6"
-  dependencies:
-    "@astrojs/internal-helpers": "npm:0.13.0"
-    "@astrojs/prism": "npm:4.1.2"
-    github-slugger: "npm:^2.0.0"
-    satteri: "npm:^0.10.5"
-  checksum: 10/d3f4037052f751bbf7771aafef54f650e5341e9ef7c9cb8d4e1c9838394fafff28c388b182b2d562dc562a289e532d2eadba3a4b4578e5f8f74323869f13bb64
-  languageName: node
-  linkType: hard
-
 "@astrojs/markdown-satteri@npm:0.4.7":
   version: 0.4.7
   resolution: "@astrojs/markdown-satteri@npm:0.4.7"
@@ -244,13 +216,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/mdx@npm:8.1.2":
-  version: 8.1.2
-  resolution: "@astrojs/mdx@npm:8.1.2"
+"@astrojs/mdx@npm:8.1.3":
+  version: 8.1.3
+  resolution: "@astrojs/mdx@npm:8.1.3"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.13.0"
-    "@astrojs/markdown-satteri": "npm:0.4.6"
-    es-module-lexer: "npm:^3.0.3"
+    "@astrojs/internal-helpers": "npm:0.13.1"
+    "@astrojs/markdown-satteri": "npm:0.4.7"
+    es-module-lexer: "npm:^3.0.4"
   peerDependencies:
     "@astrojs/markdown-remark": ^7.3.0
     "@astrojs/markdown-satteri": ^0.4.0
@@ -258,7 +230,7 @@ __metadata:
   peerDependenciesMeta:
     "@astrojs/markdown-remark":
       optional: true
-  checksum: 10/6c712fe0220681800ea607675da690426f82386471f9c7d59b5e3dea9425f84c6247b5c5584f91b0f7619a1ce7c8d0e7b604d6091be78b721d8b748358eca252
+  checksum: 10/a612620664dd299e6731a4b483197dc5b1c0d89e7292f4a66cc18753686e6744d2e8d3b93684d31aa6f5ee601ef9588448dd4f4a10ea1952131745de5db73aa4
   languageName: node
   linkType: hard
 
@@ -271,11 +243,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:7.1.3":
-  version: 7.1.3
-  resolution: "@astrojs/react@npm:7.1.3"
+"@astrojs/react@npm:7.1.4":
+  version: 7.1.4
+  resolution: "@astrojs/react@npm:7.1.4"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.13.0"
+    "@astrojs/internal-helpers": "npm:0.13.1"
     "@vitejs/plugin-react": "npm:^6.1.2"
     devalue: "npm:^6.0.3"
     ultrahtml: "npm:^1.7.0"
@@ -289,7 +261,7 @@ __metadata:
   peerDependenciesMeta:
     oxc-transform-react:
       optional: true
-  checksum: 10/31cac9e75d1cb1422defead65b04f6caac852dbdc589806618b83eaa3d78322a68477e0e9b64a0b8d6c0f63aa0b190382df0b89baec5725e09b672eaa27327f6
+  checksum: 10/0e6c4ecadf1148bf6c928a7ab4df47c329d0334b4641c1daf85afc9d1e5c0e44867af36042e63c275cdd5cf9458f5602f0c9c9a75831f7eed69b0334af24cb38
   languageName: node
   linkType: hard
 
@@ -377,24 +349,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bruits/satteri-darwin-arm64@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-darwin-arm64@npm:0.10.5"
-  conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
 "@bruits/satteri-darwin-arm64@npm:0.11.6":
   version: 0.11.6
   resolution: "@bruits/satteri-darwin-arm64@npm:0.11.6"
   conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@bruits/satteri-darwin-x64@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-darwin-x64@npm:0.10.5"
-  conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
@@ -412,24 +370,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bruits/satteri-linux-arm64-gnu@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-linux-arm64-gnu@npm:0.10.5"
-  conditions: os=linux & cpu=arm64 & libc=glibc
-  languageName: node
-  linkType: hard
-
 "@bruits/satteri-linux-arm64-gnu@npm:0.11.6":
   version: 0.11.6
   resolution: "@bruits/satteri-linux-arm64-gnu@npm:0.11.6"
   conditions: os=linux & cpu=arm64 & libc=glibc
-  languageName: node
-  linkType: hard
-
-"@bruits/satteri-linux-arm64-musl@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-linux-arm64-musl@npm:0.10.5"
-  conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
@@ -440,13 +384,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bruits/satteri-linux-x64-gnu@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-linux-x64-gnu@npm:0.10.5"
-  conditions: os=linux & cpu=x64 & libc=glibc
-  languageName: node
-  linkType: hard
-
 "@bruits/satteri-linux-x64-gnu@npm:0.11.6":
   version: 0.11.6
   resolution: "@bruits/satteri-linux-x64-gnu@npm:0.11.6"
@@ -454,28 +391,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bruits/satteri-linux-x64-musl@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-linux-x64-musl@npm:0.10.5"
-  conditions: os=linux & cpu=x64 & libc=musl
-  languageName: node
-  linkType: hard
-
 "@bruits/satteri-linux-x64-musl@npm:0.11.6":
   version: 0.11.6
   resolution: "@bruits/satteri-linux-x64-musl@npm:0.11.6"
   conditions: os=linux & cpu=x64 & libc=musl
-  languageName: node
-  linkType: hard
-
-"@bruits/satteri-wasm32-wasi@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-wasm32-wasi@npm:0.10.5"
-  dependencies:
-    "@emnapi/core": "npm:1.11.1"
-    "@emnapi/runtime": "npm:1.11.1"
-    "@napi-rs/wasm-runtime": "npm:^1.2.3"
-  conditions: cpu=wasm32
   languageName: node
   linkType: hard
 
@@ -490,24 +409,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bruits/satteri-win32-arm64-msvc@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-win32-arm64-msvc@npm:0.10.5"
-  conditions: os=win32 & cpu=arm64
-  languageName: node
-  linkType: hard
-
 "@bruits/satteri-win32-arm64-msvc@npm:0.11.6":
   version: 0.11.6
   resolution: "@bruits/satteri-win32-arm64-msvc@npm:0.11.6"
   conditions: os=win32 & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"@bruits/satteri-win32-x64-msvc@npm:0.10.5":
-  version: 0.10.5
-  resolution: "@bruits/satteri-win32-x64-msvc@npm:0.10.5"
-  conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
@@ -1480,7 +1385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@napi-rs/wasm-runtime@npm:^1.2.2, @napi-rs/wasm-runtime@npm:^1.2.3, @napi-rs/wasm-runtime@npm:^1.2.5, @napi-rs/wasm-runtime@npm:^1.2.6":
+"@napi-rs/wasm-runtime@npm:^1.2.2, @napi-rs/wasm-runtime@npm:^1.2.5, @napi-rs/wasm-runtime@npm:^1.2.6":
   version: 1.2.7
   resolution: "@napi-rs/wasm-runtime@npm:1.2.7"
   dependencies:
@@ -2778,7 +2683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.4.6":
+"astro@npm:^7.4.7":
   version: 7.4.7
   resolution: "astro@npm:7.4.7"
   dependencies:
@@ -3287,7 +3192,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es-module-lexer@npm:^3.0.3, es-module-lexer@npm:^3.0.4":
+"es-module-lexer@npm:^3.0.4":
   version: 3.0.4
   resolution: "es-module-lexer@npm:3.0.4"
   checksum: 10/31198ec02dd28ce70f378832e9b00c1f4cf466f01e6d5796a74538a0d69f9fe0aa1bfd40fde74e1b472dec62124d49ea85cf41fa5b8d4a5e4145a1b3e11a05de
@@ -4714,46 +4619,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satteri@npm:^0.10.5":
-  version: 0.10.5
-  resolution: "satteri@npm:0.10.5"
-  dependencies:
-    "@bruits/satteri-darwin-arm64": "npm:0.10.5"
-    "@bruits/satteri-darwin-x64": "npm:0.10.5"
-    "@bruits/satteri-linux-arm64-gnu": "npm:0.10.5"
-    "@bruits/satteri-linux-arm64-musl": "npm:0.10.5"
-    "@bruits/satteri-linux-x64-gnu": "npm:0.10.5"
-    "@bruits/satteri-linux-x64-musl": "npm:0.10.5"
-    "@bruits/satteri-wasm32-wasi": "npm:0.10.5"
-    "@bruits/satteri-win32-arm64-msvc": "npm:0.10.5"
-    "@bruits/satteri-win32-x64-msvc": "npm:0.10.5"
-    "@types/estree-jsx": "npm:^1.0.5"
-    "@types/hast": "npm:^3.0.5"
-    "@types/mdast": "npm:^4.0.4"
-    "@types/unist": "npm:^3.0.3"
-  dependenciesMeta:
-    "@bruits/satteri-darwin-arm64":
-      optional: true
-    "@bruits/satteri-darwin-x64":
-      optional: true
-    "@bruits/satteri-linux-arm64-gnu":
-      optional: true
-    "@bruits/satteri-linux-arm64-musl":
-      optional: true
-    "@bruits/satteri-linux-x64-gnu":
-      optional: true
-    "@bruits/satteri-linux-x64-musl":
-      optional: true
-    "@bruits/satteri-wasm32-wasi":
-      optional: true
-    "@bruits/satteri-win32-arm64-msvc":
-      optional: true
-    "@bruits/satteri-win32-x64-msvc":
-      optional: true
-  checksum: 10/5fab790b3e63215709e014bc817a277a10273f7056ddb7dfb88a7aabb2b3a220fae9872516800356502184d2d00ce9c1f3acd5cdde601259f4af0b035205089a
-  languageName: node
-  linkType: hard
-
 "satteri@npm:^0.11.6":
   version: 0.11.6
   resolution: "satteri@npm:0.11.6"
@@ -5001,8 +4866,8 @@ __metadata:
   resolution: "static-site@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.12"
-    "@astrojs/mdx": "npm:8.1.2"
-    "@astrojs/react": "npm:7.1.3"
+    "@astrojs/mdx": "npm:8.1.3"
+    "@astrojs/react": "npm:7.1.4"
     "@astrojs/sitemap": "npm:3.7.4"
     "@commitlint/cli": "npm:21.2.4"
     "@commitlint/config-conventional": "npm:21.2.4"
@@ -5014,7 +4879,7 @@ __metadata:
     "@types/node": "npm:26.6.6"
     "@types/react": "npm:19.3.0"
     "@types/react-dom": "npm:19.3.0"
-    astro: "npm:^7.4.6"
+    astro: "npm:^7.4.7"
     class-variance-authority: "npm:^0.7.1"
     cn: "npm:^0.5.2"
     lucide-react: "npm:^1.69.0"
