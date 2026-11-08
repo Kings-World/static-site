@@ -271,15 +271,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:7.1.2":
-  version: 7.1.2
-  resolution: "@astrojs/react@npm:7.1.2"
+"@astrojs/react@npm:7.1.3":
+  version: 7.1.3
+  resolution: "@astrojs/react@npm:7.1.3"
   dependencies:
     "@astrojs/internal-helpers": "npm:0.13.0"
     "@vitejs/plugin-react": "npm:^6.1.2"
-    devalue: "npm:^6.0.2"
+    devalue: "npm:^6.0.3"
     ultrahtml: "npm:^1.7.0"
-    vite: "npm:^8.3.4"
+    vite: "npm:^8.3.5"
   peerDependencies:
     "@types/react": ^17.0.50 || ^18.0.21 || ^19.0.0
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
@@ -289,7 +289,7 @@ __metadata:
   peerDependenciesMeta:
     oxc-transform-react:
       optional: true
-  checksum: 10/1862f0158140a44478dc59f9e76bc71e5b2eeb0d6a02547830b0b9c5b8ab11442b9387b12f032f8cbae7a99403afc0401cee5986be780e943ec5f7520637d626
+  checksum: 10/31cac9e75d1cb1422defead65b04f6caac852dbdc589806618b83eaa3d78322a68477e0e9b64a0b8d6c0f63aa0b190382df0b89baec5725e09b672eaa27327f6
   languageName: node
   linkType: hard
 
@@ -2778,7 +2778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.4.5":
+"astro@npm:^7.4.6":
   version: 7.4.7
   resolution: "astro@npm:7.4.7"
   dependencies:
@@ -3162,7 +3162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devalue@npm:^6.0.2, devalue@npm:^6.0.3":
+"devalue@npm:^6.0.3":
   version: 6.0.3
   resolution: "devalue@npm:6.0.3"
   checksum: 10/04083aaa6868eaae2b476ec364dd5424a1ebe5f3bafdf81d1c61f1ada0148706b46d352d6dac206e89c67a484dc58e141c951ebcd03ebbce0e09c3a92efedcec
@@ -5002,7 +5002,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:0.9.12"
     "@astrojs/mdx": "npm:8.1.2"
-    "@astrojs/react": "npm:7.1.2"
+    "@astrojs/react": "npm:7.1.3"
     "@astrojs/sitemap": "npm:3.7.4"
     "@commitlint/cli": "npm:21.2.4"
     "@commitlint/config-conventional": "npm:21.2.4"
@@ -5014,7 +5014,7 @@ __metadata:
     "@types/node": "npm:26.6.6"
     "@types/react": "npm:19.3.0"
     "@types/react-dom": "npm:19.3.0"
-    astro: "npm:^7.4.5"
+    astro: "npm:^7.4.6"
     class-variance-authority: "npm:^0.7.1"
     cn: "npm:^0.5.2"
     lucide-react: "npm:^1.69.0"
@@ -5515,7 +5515,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^8.3.4, vite@npm:^8.3.5":
+"vite@npm:^8.3.5":
   version: 8.3.5
   resolution: "vite@npm:8.3.5"
   dependencies:
